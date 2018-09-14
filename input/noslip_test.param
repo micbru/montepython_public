@@ -25,8 +25,8 @@ data.over_sampling=[1, 4]
 
 data.parameters['omega_b']      = [ 2.2253,   None, None,  0.028, 0.01, 'cosmo']
 data.parameters['omega_cdm']    = [0.11919,   None, None, 0.0027,    1, 'cosmo']
-data.parameters['100*theta_s']  = [ 1.0418,   None, None,   3e-4,    1, 'cosmo']
-data.parameters['ln10^{10}A_s'] = [ 3.0753,   None, None, 0.0029,    1, 'cosmo']
+data.parameters['H0']           = [   76.2,   None, None,   1.2,     1, 'cosmo']
+data.parameters['A_s']          = [ 2.2177,   None, None, 0.055, 1.e-9, 'cosmo']
 data.parameters['n_s']          = [0.96229,   None, None, 0.0074,    1, 'cosmo']
 data.parameters['tau_reio']     = [0.09463,   0.04, None,  0.013,    1, 'cosmo']
 
@@ -81,10 +81,10 @@ data.parameters['A_planck']          = [100.028,   90,  110,  0.25,  0.01,'nuisa
 # Derived parameters
 
 data.parameters['z_reio']          = [1, None, None, 0,     1,   'derived']
-data.parameters['Omega_Lambda']    = [1, None, None, 0,     1,   'derived']
+#data.parameters['Omega_Lambda']    = [1, None, None, 0,     1,   'derived']
 data.parameters['YHe']             = [1, None, None, 0,     1,   'derived']
-data.parameters['H0']              = [0, None, None, 0,     1,   'derived']
-data.parameters['A_s']             = [0, None, None, 0,  1e-9,   'derived']
+#data.parameters['H0']              = [0, None, None, 0,     1,   'derived']
+#data.parameters['A_s']             = [0, None, None, 0,  1e-9,   'derived']
 data.parameters['sigma8']          = [0, None, None, 0,     1,   'derived']
 
 

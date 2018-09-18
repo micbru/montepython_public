@@ -15,49 +15,53 @@ data.over_sampling=[1, 4]
 
 #------ Parameter list -------
 
-# data.parameters[class name] = [mean, min, max, 1-sigma, scale, role]
+# data.parameters[class name] = [mean, min, max, sigma, scale, role]
 # - if min max irrelevant, put to -1
-# - if fixed, put 1-sigma to 0
+# - if fixed, put sigma to 0
 # - if scale irrelevant, put to 1, otherwise to the appropriate factor
-# - role is either 'cosmo' or 'nuisance'
+# - role is either 'cosmo', 'derived', or 'nuisance'
 
 # Cosmological parameters list
 
-data.parameters['omega_b']      = [ 2.2253,   None, None,  0.028, 0.01, 'cosmo']
-data.parameters['omega_cdm']    = [0.11919,   None, None, 0.0027,    1, 'cosmo']
-data.parameters['H0']           = [   76.2,   None, None,   1.2,     1, 'cosmo']
-data.parameters['A_s']          = [ 2.2177,   None, None, 0.055, 1.e-9, 'cosmo']
-data.parameters['n_s']          = [0.96229,   None, None, 0.0074,    1, 'cosmo']
-data.parameters['tau_reio']     = [0.09463,   0.04, None,  0.013,    1, 'cosmo']
-
-# Expansion history: Omega_0, w, Omega_ede
-data.cosmo_arguments['expansion_model'] = 'lcdm'
-# Not sure what to do here?
-data.cosmo_arguments['Omega_Lambda'] = 0.
-data.cosmo_arguments['Omega_fld'] = 0.
-data.cosmo_arguments['Omega_smg'] = -1.
+data.parameters['omega_b']      = [ 2.2253, None, None,  0.028,  0.01, 'cosmo']
+data.parameters['omega_cdm']    = [0.11919, None, None, 0.0027,     1, 'cosmo']
+data.parameters['H0']           = [ 67.802, None, None,    1.2,     1, 'cosmo']
+data.parameters['A_s']          = [ 2.2177,   0., None,  0.055, 1.e-9, 'cosmo']
+data.parameters['n_s']          = [0.96229,   0., None, 0.0074,     1, 'cosmo']
+data.parameters['tau_reio']     = [0.09463,   0., None,  0.013,     1, 'cosmo']
 
 # BS-alphas: kineticity, braiding, running, tensors, M2_ini
 data.cosmo_arguments['gravity_model'] = 'no_slip'
 # This is c_k, set to 0
-data.parameters['parameters_smg__1'] = [0.,  None, None, 0., 1, 'cosmo'] 
+data.parameters['parameters_smg__1'] = [0.,  None, None,  0., 1, 'cosmo'] 
 # This is c_m, so we should vary over it!
-data.parameters['parameters_smg__2'] = [0.,  None, None, 0., 1, 'cosmo'] 
+# Choose initially 0.05 and sigma = 0.1. Set lower bound at 0 for stability.
+# We should choose a flat distribution from 0 to 0.2, not sure if that's what I'm doing...
+data.parameters['parameters_smg__2'] = [0.05,  0.,  0.2, 0.1, 1, 'cosmo'] 
 # This is a_t, set to 0.5.
-data.parameters['parameters_smg__3'] = [0.5, None, None, 0., 1, 'cosmo'] 
+data.parameters['parameters_smg__3'] = [0.5, None, None,  0., 1, 'cosmo'] 
 # This is tau, set to 1.
-data.parameters['parameters_smg__4'] = [1.0, None, None, 0., 1, 'cosmo']
+data.parameters['parameters_smg__4'] = [1.0, None, None,  0., 1, 'cosmo']
 # This is M_*,ini, set to 1.
-data.parameters['parameters_smg__5'] = [1.0, None,None, 0., 1, 'cosmo'] 
+data.parameters['parameters_smg__5'] = [1.0, None, None,  0., 1, 'cosmo'] 
+
+# Expansion history: Omega_0, w, Omega_ede
+data.cosmo_arguments['expansion_model'] = 'lcdm'
+# As in hi_class:
+# 1) no cosmological constant, no fluid DE and 2) close up the universe with scalar field (smg)
+data.cosmo_arguments['Omega_Lambda'] = 0.
+data.cosmo_arguments['Omega_fld'] = 0.
+data.cosmo_arguments['Omega_smg'] = -1.
 
 #conservative precision parameters for the run
-# What is this?
 data.cosmo_arguments['start_small_k_at_tau_c_over_tau_h'] = 1e-4
 data.cosmo_arguments['start_large_k_at_tau_h_over_tau_k'] = 1e-4
 data.cosmo_arguments['perturb_sampling_stepsize'] = 0.05
 data.cosmo_arguments['l_logstep'] = 1.045
 data.cosmo_arguments['l_linstep'] = 50
 data.cosmo_arguments['kineticity_safe_smg'] = 1.e-5
+# This is added in:
+data.cosmo_arguments['cs2_safe_smg'] = 1.e-10
 
 # Nuisance parameter list, same call, except the name does not have to be a class name
 
@@ -85,7 +89,7 @@ data.parameters['z_reio']          = [1, None, None, 0,     1,   'derived']
 data.parameters['YHe']             = [1, None, None, 0,     1,   'derived']
 #data.parameters['H0']              = [0, None, None, 0,     1,   'derived']
 #data.parameters['A_s']             = [0, None, None, 0,  1e-9,   'derived']
-data.parameters['sigma8']          = [0, None, None, 0,     1,   'derived']
+data.parameters['sigma8']          = [1, None, None, 0,     1,   'derived']
 
 # The base model features two massless
 # and one massive neutrino with m=0.06eV.
@@ -101,6 +105,10 @@ data.cosmo_arguments['T_ncdm'] = 0.71611
 data.cosmo_arguments['output'] = 'mPk'
 data.cosmo_arguments['P_k_max_h/Mpc'] = 1.
 
+# Other fixed things:
+data.cosmo_arguments['k_pivot'] = 0.05
+# To agree with CAMB
+data.cosmo_arguments['reionization_width']=0.5
 #------ Mcmc parameters ----
 
 data.N=10

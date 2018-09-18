@@ -1,0 +1,2 @@
+# Only plot the things we actually want to plot (get rid of nuisance parameters)
+info.to_plot = {'omega_b','omega_cdm','100*theta_s', 'ln10^{10}A_s', 'n_s', 'tau_reio'}

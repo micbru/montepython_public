@@ -17,8 +17,8 @@ srun  -N 1 -n 6 -c 4 \
  python montepython/MontePython.py run \
  -o chains/noslip/ \
  -p input/noslip.param \
- -c covmat/noslip.covmat  \
- -b bestfit/noslip.bestfit \
+ -c covmat/base2015.covmat  \
+ -b bestfit/base2015.bestfit \
  -j fast --update 300 -f 2.4 \
  -N 100000
 

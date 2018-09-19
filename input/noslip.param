@@ -15,9 +15,9 @@ data.over_sampling=[1, 4]
 
 #------ Parameter list -------
 
-# data.parameters[class name] = [mean, min, max, sigma, scale, role]
+# data.parameters[class name] = [mean, min, max, 1-sigma, scale, role]
 # - if min max irrelevant, put to -1
-# - if fixed, put sigma to 0
+# - if fixed, put 1-sigma to 0
 # - if scale irrelevant, put to 1, otherwise to the appropriate factor
 # - role is either 'cosmo', 'derived', or 'nuisance'
 

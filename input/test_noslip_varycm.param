@@ -36,7 +36,7 @@ data.cosmo_arguments['gravity_model'] = 'no_slip'
 data.parameters['parameters_smg__1'] = [0.,  None, None,  0., 1, 'cosmo'] 
 # This is c_m, so we should vary over it!
 # Only vary c_M, keep all others fixed.
-data.parameters['parameters_smg__2'] = [0.05,  0.,  None, 0.1, 1, 'cosmo'] 
+data.parameters['parameters_smg__2'] = [0.03,  0.,  None, 0.01, 1, 'cosmo'] 
 # This is a_t, set to 0.5.
 data.parameters['parameters_smg__3'] = [0.5, None, None,  0., 1, 'cosmo'] 
 # This is tau, set to 1.

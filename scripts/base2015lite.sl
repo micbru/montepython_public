@@ -1,9 +1,9 @@
 #!/bin/bash -l
-#SBATCH -p regular #debug
+#SBATCH -p debug #regular
 #SBATCH -N 1
-#SBATCH -t 02:00:00
+#SBATCH -t 00:30:00
 #SBATCH -J jobtest
-#SBATCH -o sl_test_noslip_lite_%j
+#SBATCH -o sl_base2015lite_%j
 #SBATCH -L SCRATCH  #note: specify license need for the file systems your job needs, such as SCRATCH,project (SCRATCH equivalent to scratch2)
  
 cd ..
@@ -15,11 +15,11 @@ export OMP_NUM_THREADS=4
 
 srun  -N 1 -n 6 -c 4 \
  python montepython/MontePython.py run \
- -o chains/test_noslip_lite/ \
- -p input/test_noslip_lite.param \
+ -o chains/base2015lite/ \
+ -p input/base2015lite.param \
  -c covmat/base2015.covmat  \
  -b bestfit/base2015.bestfit \
  -j fast --update 300 -f 2.4 \
- -N 5000
+ -N 10000
 
 exit

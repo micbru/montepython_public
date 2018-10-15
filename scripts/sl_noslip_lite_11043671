@@ -1,0 +1,659 @@
+ Initializing Planck likelihood, version Plik_v18_cmbonly_like
+ Initializing Planck likelihood, version Plik_v18_cmbonly_like
+ Initializing Planck likelihood, version Plik_v18_cmbonly_like
+ Initializing Planck likelihood, version Plik_v18_cmbonly_like
+ Initializing Planck likelihood, version Plik_v18_cmbonly_like
+ Initializing Planck likelihood, version Plik_v18_cmbonly_like
+ BFLike Ntemp  =        2876
+ BFLike Nq     =        1407
+ BFLike Nu     =        1407
+ BFLike Nside  =          16
+ BFLike Nwrite =    32393560
+ BFLike Ntemp  =        2876
+ BFLike Nq     =        1407
+ BFLike Nu     =        1407
+ BFLike Nside  =          16
+ BFLike Nwrite =    32393560
+ BFLike Ntemp  =        2876
+ BFLike Nq     =        1407
+ BFLike Nu     =        1407
+ BFLike Nside  =          16
+ BFLike Nwrite =    32393560
+ BFLike Ntemp  =        2876
+ BFLike Nq     =        1407
+ BFLike Ntemp  =        2876
+ BFLike Nq     =        1407
+ BFLike Nu     =        1407
+ BFLike Nside  =          16
+ BFLike Nwrite =    32393560
+ BFLike Nu     =        1407
+ BFLike Nside  =          16
+ BFLike Nwrite =    32393560
+ BFLike Ntemp  =        2876
+ BFLike Nq     =        1407
+ BFLike Nu     =        1407
+ BFLike Nside  =          16
+ BFLike Nwrite =    32393560
+ cls file appears to have 5+ columns
+ assuming it is a CAMB file with l, TT, EE, BB, TE
+ cls file appears to have 5+ columns
+ assuming it is a CAMB file with l, TT, EE, BB, TE
+ cls file appears to have 5+ columns
+ assuming it is a CAMB file with l, TT, EE, BB, TE
+ cls file appears to have 5+ columns
+ assuming it is a CAMB file with l, TT, EE, BB, TE
+ cls file appears to have 5+ columns
+ assuming it is a CAMB file with l, TT, EE, BB, TE
+ cls file appears to have 5+ columns
+ assuming it is a CAMB file with l, TT, EE, BB, TE
+ info =            0
+ info =            0
+ info =            0
+ info =            0
+ info =            0
+ info =            0
+ /!\ Appending to an existing folder: using the log.param instead of
+     input/test_noslip_lite.param
+Running Monte Python v3.0.1
+
+with CLASS v2.4.5
+
+Testing likelihoods for:
+ -> Planck_highl_lite, Planck_lowl, Planck_lensing
+
+ /!\ PyFITS is deprecated, please use astropy.io.fits
+----
+clik version 6dc2a8cf3965
+  plik_cmbonly
+Checking likelihood '/scratch1/scratchdirs/micbru/NoSlip/planck/plc-2.0/../plc_2.0/hi_l/plik_lite/plik_lite_v18_TT.clik' on test data. got -101.798 expected -101.798 (diff 1.03567e-08)
+----
+In Planck_highl_lite, MontePython corrected nuisance parameter name A_Planck to A_planck
+----
+clik version 6dc2a8cf3965
+  bflike_smw
+Checking likelihood '/scratch1/scratchdirs/micbru/NoSlip/planck/plc-2.0/../plc_2.0/low_l/bflike/lowl_SMW_70_dx11d_2014_10_03_v5c_Ap.clik' on test data. got -5247.87 expected -5247.87 (diff 2.61964e-07)
+----
+Checking lensing likelihood '/scratch1/scratchdirs/micbru/NoSlip/planck/plc-2.0/../plc_2.0/lensing/smica_g30_ftl_full_pp.clik_lensing' on test data. got -5.91088 expected -5.91088 (diff 9.56746e-11)
+Creating chains/noslip_lite/2018-10-12_400__2.txt
+
+
+Input covariance matrix:
+['omega_b', 'omega_cdm', 'H0', 'A_s', 'n_s', 'tau_reio', 'parameters_smg__2', 'A_planck', 'z_reio', 'YHe', 'sigma8']
+[[ 2.93e-08 -1.17e-08  2.58e-05  4.46e-15  2.32e-07  1.15e-06  4.96e-08 -1.11e-07  9.74e-05  1.26e-08  6.64e-07]
+ [-1.17e-08  2.64e-06 -9.29e-04 -4.98e-14 -5.94e-06 -1.61e-05 -9.91e-07  1.23e-06 -1.40e-03 -5.02e-09 -7.03e-07]
+ [ 2.58e-05 -9.29e-04  3.60e-01  1.98e-11  2.30e-03  6.21e-03  3.10e-04 -4.82e-04  5.36e-01  1.11e-05  7.46e-04]
+ [ 4.46e-15 -4.98e-14  1.98e-11  3.03e-21  7.13e-14  8.04e-13  1.09e-13 -4.90e-14  7.08e-11  1.92e-15  2.36e-13]
+ [ 2.32e-07 -5.94e-06  2.30e-03  7.13e-14  2.88e-05  2.89e-05 -4.33e-06 -2.57e-06  2.45e-03  9.95e-08  7.71e-06]
+ [ 1.15e-06 -1.61e-05  6.21e-03  8.04e-13  2.89e-05  2.25e-04  2.67e-05 -2.02e-05  1.98e-02  4.93e-07  5.85e-05]
+ [ 4.96e-08 -9.91e-07  3.10e-04  1.09e-13 -4.33e-06  2.67e-05  1.97e-05 -1.13e-06  2.41e-03  2.16e-08 -1.36e-05]
+ [-1.11e-07  1.23e-06 -4.82e-04 -4.90e-14 -2.57e-06 -2.02e-05 -1.13e-06  7.34e-06 -1.74e-03 -4.76e-08 -3.30e-06]
+ [ 9.74e-05 -1.40e-03  5.36e-01  7.08e-11  2.45e-03  1.98e-02  2.41e-03 -1.74e-03  1.74e+00  4.18e-05  5.13e-03]
+ [ 1.26e-08 -5.02e-09  1.11e-05  1.92e-15  9.95e-08  4.93e-07  2.16e-08 -4.76e-08  4.18e-05  5.40e-09  2.85e-07]
+ [ 6.64e-07 -7.03e-07  7.46e-04  2.36e-13  7.71e-06  5.85e-05 -1.36e-05 -3.30e-06  5.13e-03  2.85e-07  6.07e-05]]
+
+First treatment (scaling)
+['omega_b', 'omega_cdm', 'H0', 'A_s', 'n_s', 'tau_reio', 'parameters_smg__2', 'A_planck', 'z_reio', 'YHe', 'sigma8']
+[[ 2.93e-04 -1.17e-06  2.58e-03  4.46e-04  2.32e-05  1.15e-04  4.96e-06 -1.11e-03  9.74e-03  1.26e-06  6.64e-05]
+ [-1.17e-06  2.64e-06 -9.29e-04 -4.98e-05 -5.94e-06 -1.61e-05 -9.91e-07  1.23e-04 -1.40e-03 -5.02e-09 -7.03e-07]
+ [ 2.58e-03 -9.29e-04  3.60e-01  1.98e-02  2.30e-03  6.21e-03  3.10e-04 -4.82e-02  5.36e-01  1.11e-05  7.46e-04]
+ [ 4.46e-04 -4.98e-05  1.98e-02  3.03e-03  7.13e-05  8.04e-04  1.09e-04 -4.90e-03  7.08e-02  1.92e-06  2.36e-04]
+ [ 2.32e-05 -5.94e-06  2.30e-03  7.13e-05  2.88e-05  2.89e-05 -4.33e-06 -2.57e-04  2.45e-03  9.95e-08  7.71e-06]
+ [ 1.15e-04 -1.61e-05  6.21e-03  8.04e-04  2.89e-05  2.25e-04  2.67e-05 -2.02e-03  1.98e-02  4.93e-07  5.85e-05]
+ [ 4.96e-06 -9.91e-07  3.10e-04  1.09e-04 -4.33e-06  2.67e-05  1.97e-05 -1.13e-04  2.41e-03  2.16e-08 -1.36e-05]
+ [-1.11e-03  1.23e-04 -4.82e-02 -4.90e-03 -2.57e-04 -2.02e-03 -1.13e-04  7.34e-02 -1.74e-01 -4.76e-06 -3.30e-04]
+ [ 9.74e-03 -1.40e-03  5.36e-01  7.08e-02  2.45e-03  1.98e-02  2.41e-03 -1.74e-01  1.74e+00  4.18e-05  5.13e-03]
+ [ 1.26e-06 -5.02e-09  1.11e-05  1.92e-06  9.95e-08  4.93e-07  2.16e-08 -4.76e-06  4.18e-05  5.40e-09  2.85e-07]
+ [ 6.64e-05 -7.03e-07  7.46e-04  2.36e-04  7.71e-06  5.85e-05 -1.36e-05 -3.30e-04  5.13e-03  2.85e-07  6.07e-05]]
+
+Second treatment (partial reordering and cleaning)
+['omega_b', 'omega_cdm', 'H0', 'A_s', 'n_s', 'tau_reio', 'parameters_smg__2', 'A_planck', '', '', '']
+ /!\ Appending to an existing folder: using the log.param instead of
+     input/test_noslip_lite.param
+Running Monte Python v3.0.1
+
+with CLASS v2.4.5
+
+Testing likelihoods for:
+ -> Planck_highl_lite, Planck_lowl, Planck_lensing
+
+ /!\ PyFITS is deprecated, please use astropy.io.fits
+----
+clik version 6dc2a8cf3965
+  plik_cmbonly
+Checking likelihood '/scratch1/scratchdirs/micbru/NoSlip/planck/plc-2.0/../plc_2.0/hi_l/plik_lite/plik_lite_v18_TT.clik' on test data. got -101.798 expected -101.798 (diff 1.03567e-08)
+----
+In Planck_highl_lite, MontePython corrected nuisance parameter name A_Planck to A_planck
+----
+clik version 6dc2a8cf3965
+  bflike_smw
+Checking likelihood '/scratch1/scratchdirs/micbru/NoSlip/planck/plc-2.0/../plc_2.0/low_l/bflike/lowl_SMW_70_dx11d_2014_10_03_v5c_Ap.clik' on test data. got -5247.87 expected -5247.87 (diff 2.61964e-07)
+----
+Checking lensing likelihood '/scratch1/scratchdirs/micbru/NoSlip/planck/plc-2.0/../plc_2.0/lensing/smica_g30_ftl_full_pp.clik_lensing' on test data. got -5.91088 expected -5.91088 (diff 9.56746e-11)
+Creating chains/noslip_lite/2018-10-12_400__5.txt
+
+
+Input covariance matrix:
+['omega_b', 'omega_cdm', 'H0', 'A_s', 'n_s', 'tau_reio', 'parameters_smg__2', 'A_planck', 'z_reio', 'YHe', 'sigma8']
+[[ 2.93e-08 -1.17e-08  2.58e-05  4.46e-15  2.32e-07  1.15e-06  4.96e-08 -1.11e-07  9.74e-05  1.26e-08  6.64e-07]
+ [-1.17e-08  2.64e-06 -9.29e-04 -4.98e-14 -5.94e-06 -1.61e-05 -9.91e-07  1.23e-06 -1.40e-03 -5.02e-09 -7.03e-07]
+ [ 2.58e-05 -9.29e-04  3.60e-01  1.98e-11  2.30e-03  6.21e-03  3.10e-04 -4.82e-04  5.36e-01  1.11e-05  7.46e-04]
+ [ 4.46e-15 -4.98e-14  1.98e-11  3.03e-21  7.13e-14  8.04e-13  1.09e-13 -4.90e-14  7.08e-11  1.92e-15  2.36e-13]
+ [ 2.32e-07 -5.94e-06  2.30e-03  7.13e-14  2.88e-05  2.89e-05 -4.33e-06 -2.57e-06  2.45e-03  9.95e-08  7.71e-06]
+ [ 1.15e-06 -1.61e-05  6.21e-03  8.04e-13  2.89e-05  2.25e-04  2.67e-05 -2.02e-05  1.98e-02  4.93e-07  5.85e-05]
+ [ 4.96e-08 -9.91e-07  3.10e-04  1.09e-13 -4.33e-06  2.67e-05  1.97e-05 -1.13e-06  2.41e-03  2.16e-08 -1.36e-05]
+ [-1.11e-07  1.23e-06 -4.82e-04 -4.90e-14 -2.57e-06 -2.02e-05 -1.13e-06  7.34e-06 -1.74e-03 -4.76e-08 -3.30e-06]
+ [ 9.74e-05 -1.40e-03  5.36e-01  7.08e-11  2.45e-03  1.98e-02  2.41e-03 -1.74e-03  1.74e+00  4.18e-05  5.13e-03]
+ [ 1.26e-08 -5.02e-09  1.11e-05  1.92e-15  9.95e-08  4.93e-07  2.16e-08 -4.76e-08  4.18e-05  5.40e-09  2.85e-07]
+ [ 6.64e-07 -7.03e-07  7.46e-04  2.36e-13  7.71e-06  5.85e-05 -1.36e-05 -3.30e-06  5.13e-03  2.85e-07  6.07e-05]]
+
+First treatment (scaling)
+['omega_b', 'omega_cdm', 'H0', 'A_s', 'n_s', 'tau_reio', 'parameters_smg__2', 'A_planck', 'z_reio', 'YHe', 'sigma8']
+[[ 2.93e-04 -1.17e-06  2.58e-03  4.46e-04  2.32e-05  1.15e-04  4.96e-06 -1.11e-03  9.74e-03  1.26e-06  6.64e-05]
+ [-1.17e-06  2.64e-06 -9.29e-04 -4.98e-05 -5.94e-06 -1.61e-05 -9.91e-07  1.23e-04 -1.40e-03 -5.02e-09 -7.03e-07]
+ [ 2.58e-03 -9.29e-04  3.60e-01  1.98e-02  2.30e-03  6.21e-03  3.10e-04 -4.82e-02  5.36e-01  1.11e-05  7.46e-04]
+ [ 4.46e-04 -4.98e-05  1.98e-02  3.03e-03  7.13e-05  8.04e-04  1.09e-04 -4.90e-03  7.08e-02  1.92e-06  2.36e-04]
+ [ 2.32e-05 -5.94e-06  2.30e-03  7.13e-05  2.88e-05  2.89e-05 -4.33e-06 -2.57e-04  2.45e-03  9.95e-08  7.71e-06]
+ [ 1.15e-04 -1.61e-05  6.21e-03  8.04e-04  2.89e-05  2.25e-04  2.67e-05 -2.02e-03  1.98e-02  4.93e-07  5.85e-05]
+ [ 4.96e-06 -9.91e-07  3.10e-04  1.09e-04 -4.33e-06  2.67e-05  1.97e-05 -1.13e-04  2.41e-03  2.16e-08 -1.36e-05]
+ [-1.11e-03  1.23e-04 -4.82e-02 -4.90e-03 -2.57e-04 -2.02e-03 -1.13e-04  7.34e-02 -1.74e-01 -4.76e-06 -3.30e-04]
+ [ 9.74e-03 -1.40e-03  5.36e-01  7.08e-02  2.45e-03  1.98e-02  2.41e-03 -1.74e-01  1.74e+00  4.18e-05  5.13e-03]
+ [ 1.26e-06 -5.02e-09  1.11e-05  1.92e-06  9.95e-08  4.93e-07  2.16e-08 -4.76e-06  4.18e-05  5.40e-09  2.85e-07]
+ [ 6.64e-05 -7.03e-07  7.46e-04  2.36e-04  7.71e-06  5.85e-05 -1.36e-05 -3.30e-04  5.13e-03  2.85e-07  6.07e-05]]
+
+Second treatment (partial reordering and cleaning)
+['omega_b', 'omega_cdm', 'H0', 'A_s', 'n_s', 'tau_reio', 'parameters_smg__2', 'A_planck', '', '', '']
+ /!\ Appending to an existing folder: using the log.param instead of
+     input/test_noslip_lite.param
+Running Monte Python v3.0.1
+
+with CLASS v2.4.5
+
+Testing likelihoods for:
+ -> Planck_highl_lite, Planck_lowl, Planck_lensing
+
+ /!\ PyFITS is deprecated, please use astropy.io.fits
+----
+clik version 6dc2a8cf3965
+  plik_cmbonly
+Checking likelihood '/scratch1/scratchdirs/micbru/NoSlip/planck/plc-2.0/../plc_2.0/hi_l/plik_lite/plik_lite_v18_TT.clik' on test data. got -101.798 expected -101.798 (diff 1.03567e-08)
+----
+In Planck_highl_lite, MontePython corrected nuisance parameter name A_Planck to A_planck
+----
+clik version 6dc2a8cf3965
+  bflike_smw
+Checking likelihood '/scratch1/scratchdirs/micbru/NoSlip/planck/plc-2.0/../plc_2.0/low_l/bflike/lowl_SMW_70_dx11d_2014_10_03_v5c_Ap.clik' on test data. got -5247.87 expected -5247.87 (diff 2.61964e-07)
+----
+Checking lensing likelihood '/scratch1/scratchdirs/micbru/NoSlip/planck/plc-2.0/../plc_2.0/lensing/smica_g30_ftl_full_pp.clik_lensing' on test data. got -5.91088 expected -5.91088 (diff 9.56746e-11)
+Creating chains/noslip_lite/2018-10-12_400__1.txt
+
+
+Input covariance matrix:
+['omega_b', 'omega_cdm', 'H0', 'A_s', 'n_s', 'tau_reio', 'parameters_smg__2', 'A_planck', 'z_reio', 'YHe', 'sigma8']
+[[ 2.93e-08 -1.17e-08  2.58e-05  4.46e-15  2.32e-07  1.15e-06  4.96e-08 -1.11e-07  9.74e-05  1.26e-08  6.64e-07]
+ [-1.17e-08  2.64e-06 -9.29e-04 -4.98e-14 -5.94e-06 -1.61e-05 -9.91e-07  1.23e-06 -1.40e-03 -5.02e-09 -7.03e-07]
+ [ 2.58e-05 -9.29e-04  3.60e-01  1.98e-11  2.30e-03  6.21e-03  3.10e-04 -4.82e-04  5.36e-01  1.11e-05  7.46e-04]
+ [ 4.46e-15 -4.98e-14  1.98e-11  3.03e-21  7.13e-14  8.04e-13  1.09e-13 -4.90e-14  7.08e-11  1.92e-15  2.36e-13]
+ [ 2.32e-07 -5.94e-06  2.30e-03  7.13e-14  2.88e-05  2.89e-05 -4.33e-06 -2.57e-06  2.45e-03  9.95e-08  7.71e-06]
+ [ 1.15e-06 -1.61e-05  6.21e-03  8.04e-13  2.89e-05  2.25e-04  2.67e-05 -2.02e-05  1.98e-02  4.93e-07  5.85e-05]
+ [ 4.96e-08 -9.91e-07  3.10e-04  1.09e-13 -4.33e-06  2.67e-05  1.97e-05 -1.13e-06  2.41e-03  2.16e-08 -1.36e-05]
+ [-1.11e-07  1.23e-06 -4.82e-04 -4.90e-14 -2.57e-06 -2.02e-05 -1.13e-06  7.34e-06 -1.74e-03 -4.76e-08 -3.30e-06]
+ [ 9.74e-05 -1.40e-03  5.36e-01  7.08e-11  2.45e-03  1.98e-02  2.41e-03 -1.74e-03  1.74e+00  4.18e-05  5.13e-03]
+ [ 1.26e-08 -5.02e-09  1.11e-05  1.92e-15  9.95e-08  4.93e-07  2.16e-08 -4.76e-08  4.18e-05  5.40e-09  2.85e-07]
+ [ 6.64e-07 -7.03e-07  7.46e-04  2.36e-13  7.71e-06  5.85e-05 -1.36e-05 -3.30e-06  5.13e-03  2.85e-07  6.07e-05]]
+
+First treatment (scaling)
+['omega_b', 'omega_cdm', 'H0', 'A_s', 'n_s', 'tau_reio', 'parameters_smg__2', 'A_planck', 'z_reio', 'YHe', 'sigma8']
+[[ 2.93e-04 -1.17e-06  2.58e-03  4.46e-04  2.32e-05  1.15e-04  4.96e-06 -1.11e-03  9.74e-03  1.26e-06  6.64e-05]
+ [-1.17e-06  2.64e-06 -9.29e-04 -4.98e-05 -5.94e-06 -1.61e-05 -9.91e-07  1.23e-04 -1.40e-03 -5.02e-09 -7.03e-07]
+ [ 2.58e-03 -9.29e-04  3.60e-01  1.98e-02  2.30e-03  6.21e-03  3.10e-04 -4.82e-02  5.36e-01  1.11e-05  7.46e-04]
+ [ 4.46e-04 -4.98e-05  1.98e-02  3.03e-03  7.13e-05  8.04e-04  1.09e-04 -4.90e-03  7.08e-02  1.92e-06  2.36e-04]
+ [ 2.32e-05 -5.94e-06  2.30e-03  7.13e-05  2.88e-05  2.89e-05 -4.33e-06 -2.57e-04  2.45e-03  9.95e-08  7.71e-06]
+ [ 1.15e-04 -1.61e-05  6.21e-03  8.04e-04  2.89e-05  2.25e-04  2.67e-05 -2.02e-03  1.98e-02  4.93e-07  5.85e-05]
+ [ 4.96e-06 -9.91e-07  3.10e-04  1.09e-04 -4.33e-06  2.67e-05  1.97e-05 -1.13e-04  2.41e-03  2.16e-08 -1.36e-05]
+ [-1.11e-03  1.23e-04 -4.82e-02 -4.90e-03 -2.57e-04 -2.02e-03 -1.13e-04  7.34e-02 -1.74e-01 -4.76e-06 -3.30e-04]
+ [ 9.74e-03 -1.40e-03  5.36e-01  7.08e-02  2.45e-03  1.98e-02  2.41e-03 -1.74e-01  1.74e+00  4.18e-05  5.13e-03]
+ [ 1.26e-06 -5.02e-09  1.11e-05  1.92e-06  9.95e-08  4.93e-07  2.16e-08 -4.76e-06  4.18e-05  5.40e-09  2.85e-07]
+ [ 6.64e-05 -7.03e-07  7.46e-04  2.36e-04  7.71e-06  5.85e-05 -1.36e-05 -3.30e-04  5.13e-03  2.85e-07  6.07e-05]]
+
+Second treatment (partial reordering and cleaning)
+['omega_b', 'omega_cdm', 'H0', 'A_s', 'n_s', 'tau_reio', 'parameters_smg__2', 'A_planck', '', '', '']
+ /!\ Appending to an existing folder: using the log.param instead of
+     input/test_noslip_lite.param
+Running Monte Python v3.0.1
+
+with CLASS v2.4.5
+
+Testing likelihoods for:
+ -> Planck_highl_lite, Planck_lowl, Planck_lensing
+
+ /!\ PyFITS is deprecated, please use astropy.io.fits
+----
+clik version 6dc2a8cf3965
+  plik_cmbonly
+Checking likelihood '/scratch1/scratchdirs/micbru/NoSlip/planck/plc-2.0/../plc_2.0/hi_l/plik_lite/plik_lite_v18_TT.clik' on test data. got -101.798 expected -101.798 (diff 1.03567e-08)
+----
+In Planck_highl_lite, MontePython corrected nuisance parameter name A_Planck to A_planck
+----
+clik version 6dc2a8cf3965
+  bflike_smw
+Checking likelihood '/scratch1/scratchdirs/micbru/NoSlip/planck/plc-2.0/../plc_2.0/low_l/bflike/lowl_SMW_70_dx11d_2014_10_03_v5c_Ap.clik' on test data. got -5247.87 expected -5247.87 (diff 2.61964e-07)
+----
+Checking lensing likelihood '/scratch1/scratchdirs/micbru/NoSlip/planck/plc-2.0/../plc_2.0/lensing/smica_g30_ftl_full_pp.clik_lensing' on test data. got -5.91088 expected -5.91088 (diff 9.56746e-11)
+Creating chains/noslip_lite/2018-10-12_400__3.txt
+
+
+Input covariance matrix:
+['omega_b', 'omega_cdm', 'H0', 'A_s', 'n_s', 'tau_reio', 'parameters_smg__2', 'A_planck', 'z_reio', 'YHe', 'sigma8']
+[[ 2.93e-08 -1.17e-08  2.58e-05  4.46e-15  2.32e-07  1.15e-06  4.96e-08 -1.11e-07  9.74e-05  1.26e-08  6.64e-07]
+ [-1.17e-08  2.64e-06 -9.29e-04 -4.98e-14 -5.94e-06 -1.61e-05 -9.91e-07  1.23e-06 -1.40e-03 -5.02e-09 -7.03e-07]
+ [ 2.58e-05 -9.29e-04  3.60e-01  1.98e-11  2.30e-03  6.21e-03  3.10e-04 -4.82e-04  5.36e-01  1.11e-05  7.46e-04]
+ [ 4.46e-15 -4.98e-14  1.98e-11  3.03e-21  7.13e-14  8.04e-13  1.09e-13 -4.90e-14  7.08e-11  1.92e-15  2.36e-13]
+ [ 2.32e-07 -5.94e-06  2.30e-03  7.13e-14  2.88e-05  2.89e-05 -4.33e-06 -2.57e-06  2.45e-03  9.95e-08  7.71e-06]
+ [ 1.15e-06 -1.61e-05  6.21e-03  8.04e-13  2.89e-05  2.25e-04  2.67e-05 -2.02e-05  1.98e-02  4.93e-07  5.85e-05]
+ [ 4.96e-08 -9.91e-07  3.10e-04  1.09e-13 -4.33e-06  2.67e-05  1.97e-05 -1.13e-06  2.41e-03  2.16e-08 -1.36e-05]
+ [-1.11e-07  1.23e-06 -4.82e-04 -4.90e-14 -2.57e-06 -2.02e-05 -1.13e-06  7.34e-06 -1.74e-03 -4.76e-08 -3.30e-06]
+ [ 9.74e-05 -1.40e-03  5.36e-01  7.08e-11  2.45e-03  1.98e-02  2.41e-03 -1.74e-03  1.74e+00  4.18e-05  5.13e-03]
+ [ 1.26e-08 -5.02e-09  1.11e-05  1.92e-15  9.95e-08  4.93e-07  2.16e-08 -4.76e-08  4.18e-05  5.40e-09  2.85e-07]
+ [ 6.64e-07 -7.03e-07  7.46e-04  2.36e-13  7.71e-06  5.85e-05 -1.36e-05 -3.30e-06  5.13e-03  2.85e-07  6.07e-05]]
+
+First treatment (scaling)
+['omega_b', 'omega_cdm', 'H0', 'A_s', 'n_s', 'tau_reio', 'parameters_smg__2', 'A_planck', 'z_reio', 'YHe', 'sigma8']
+[[ 2.93e-04 -1.17e-06  2.58e-03  4.46e-04  2.32e-05  1.15e-04  4.96e-06 -1.11e-03  9.74e-03  1.26e-06  6.64e-05]
+ [-1.17e-06  2.64e-06 -9.29e-04 -4.98e-05 -5.94e-06 -1.61e-05 -9.91e-07  1.23e-04 -1.40e-03 -5.02e-09 -7.03e-07]
+ [ 2.58e-03 -9.29e-04  3.60e-01  1.98e-02  2.30e-03  6.21e-03  3.10e-04 -4.82e-02  5.36e-01  1.11e-05  7.46e-04]
+ [ 4.46e-04 -4.98e-05  1.98e-02  3.03e-03  7.13e-05  8.04e-04  1.09e-04 -4.90e-03  7.08e-02  1.92e-06  2.36e-04]
+ [ 2.32e-05 -5.94e-06  2.30e-03  7.13e-05  2.88e-05  2.89e-05 -4.33e-06 -2.57e-04  2.45e-03  9.95e-08  7.71e-06]
+ [ 1.15e-04 -1.61e-05  6.21e-03  8.04e-04  2.89e-05  2.25e-04  2.67e-05 -2.02e-03  1.98e-02  4.93e-07  5.85e-05]
+ [ 4.96e-06 -9.91e-07  3.10e-04  1.09e-04 -4.33e-06  2.67e-05  1.97e-05 -1.13e-04  2.41e-03  2.16e-08 -1.36e-05]
+ [-1.11e-03  1.23e-04 -4.82e-02 -4.90e-03 -2.57e-04 -2.02e-03 -1.13e-04  7.34e-02 -1.74e-01 -4.76e-06 -3.30e-04]
+ [ 9.74e-03 -1.40e-03  5.36e-01  7.08e-02  2.45e-03  1.98e-02  2.41e-03 -1.74e-01  1.74e+00  4.18e-05  5.13e-03]
+ [ 1.26e-06 -5.02e-09  1.11e-05  1.92e-06  9.95e-08  4.93e-07  2.16e-08 -4.76e-06  4.18e-05  5.40e-09  2.85e-07]
+ [ 6.64e-05 -7.03e-07  7.46e-04  2.36e-04  7.71e-06  5.85e-05 -1.36e-05 -3.30e-04  5.13e-03  2.85e-07  6.07e-05]]
+
+Second treatment (partial reordering and cleaning)
+['omega_b', 'omega_cdm', 'H0', 'A_s', 'n_s', 'tau_reio', 'parameters_smg__2', 'A_planck', '', '', '']
+ /!\ Appending to an existing folder: using the log.param instead of
+     input/test_noslip_lite.param
+Running Monte Python v3.0.1
+
+with CLASS v2.4.5
+
+Testing likelihoods for:
+ -> Planck_highl_lite, Planck_lowl, Planck_lensing
+
+ /!\ PyFITS is deprecated, please use astropy.io.fits
+----
+clik version 6dc2a8cf3965
+  plik_cmbonly
+Checking likelihood '/scratch1/scratchdirs/micbru/NoSlip/planck/plc-2.0/../plc_2.0/hi_l/plik_lite/plik_lite_v18_TT.clik' on test data. got -101.798 expected -101.798 (diff 1.03567e-08)
+----
+In Planck_highl_lite, MontePython corrected nuisance parameter name A_Planck to A_planck
+----
+clik version 6dc2a8cf3965
+  bflike_smw
+Checking likelihood '/scratch1/scratchdirs/micbru/NoSlip/planck/plc-2.0/../plc_2.0/low_l/bflike/lowl_SMW_70_dx11d_2014_10_03_v5c_Ap.clik' on test data. got -5247.87 expected -5247.87 (diff 2.61964e-07)
+----
+Checking lensing likelihood '/scratch1/scratchdirs/micbru/NoSlip/planck/plc-2.0/../plc_2.0/lensing/smica_g30_ftl_full_pp.clik_lensing' on test data. got -5.91088 expected -5.91088 (diff 9.56746e-11)
+Creating chains/noslip_lite/2018-10-12_400__4.txt
+
+
+Input covariance matrix:
+['omega_b', 'omega_cdm', 'H0', 'A_s', 'n_s', 'tau_reio', 'parameters_smg__2', 'A_planck', 'z_reio', 'YHe', 'sigma8']
+[[ 2.93e-08 -1.17e-08  2.58e-05  4.46e-15  2.32e-07  1.15e-06  4.96e-08 -1.11e-07  9.74e-05  1.26e-08  6.64e-07]
+ [-1.17e-08  2.64e-06 -9.29e-04 -4.98e-14 -5.94e-06 -1.61e-05 -9.91e-07  1.23e-06 -1.40e-03 -5.02e-09 -7.03e-07]
+ [ 2.58e-05 -9.29e-04  3.60e-01  1.98e-11  2.30e-03  6.21e-03  3.10e-04 -4.82e-04  5.36e-01  1.11e-05  7.46e-04]
+ [ 4.46e-15 -4.98e-14  1.98e-11  3.03e-21  7.13e-14  8.04e-13  1.09e-13 -4.90e-14  7.08e-11  1.92e-15  2.36e-13]
+ [ 2.32e-07 -5.94e-06  2.30e-03  7.13e-14  2.88e-05  2.89e-05 -4.33e-06 -2.57e-06  2.45e-03  9.95e-08  7.71e-06]
+ [ 1.15e-06 -1.61e-05  6.21e-03  8.04e-13  2.89e-05  2.25e-04  2.67e-05 -2.02e-05  1.98e-02  4.93e-07  5.85e-05]
+ [ 4.96e-08 -9.91e-07  3.10e-04  1.09e-13 -4.33e-06  2.67e-05  1.97e-05 -1.13e-06  2.41e-03  2.16e-08 -1.36e-05]
+ [-1.11e-07  1.23e-06 -4.82e-04 -4.90e-14 -2.57e-06 -2.02e-05 -1.13e-06  7.34e-06 -1.74e-03 -4.76e-08 -3.30e-06]
+ [ 9.74e-05 -1.40e-03  5.36e-01  7.08e-11  2.45e-03  1.98e-02  2.41e-03 -1.74e-03  1.74e+00  4.18e-05  5.13e-03]
+ [ 1.26e-08 -5.02e-09  1.11e-05  1.92e-15  9.95e-08  4.93e-07  2.16e-08 -4.76e-08  4.18e-05  5.40e-09  2.85e-07]
+ [ 6.64e-07 -7.03e-07  7.46e-04  2.36e-13  7.71e-06  5.85e-05 -1.36e-05 -3.30e-06  5.13e-03  2.85e-07  6.07e-05]]
+
+First treatment (scaling)
+['omega_b', 'omega_cdm', 'H0', 'A_s', 'n_s', 'tau_reio', 'parameters_smg__2', 'A_planck', 'z_reio', 'YHe', 'sigma8']
+[[ 2.93e-04 -1.17e-06  2.58e-03  4.46e-04  2.32e-05  1.15e-04  4.96e-06 -1.11e-03  9.74e-03  1.26e-06  6.64e-05]
+ [-1.17e-06  2.64e-06 -9.29e-04 -4.98e-05 -5.94e-06 -1.61e-05 -9.91e-07  1.23e-04 -1.40e-03 -5.02e-09 -7.03e-07]
+ [ 2.58e-03 -9.29e-04  3.60e-01  1.98e-02  2.30e-03  6.21e-03  3.10e-04 -4.82e-02  5.36e-01  1.11e-05  7.46e-04]
+ [ 4.46e-04 -4.98e-05  1.98e-02  3.03e-03  7.13e-05  8.04e-04  1.09e-04 -4.90e-03  7.08e-02  1.92e-06  2.36e-04]
+ [ 2.32e-05 -5.94e-06  2.30e-03  7.13e-05  2.88e-05  2.89e-05 -4.33e-06 -2.57e-04  2.45e-03  9.95e-08  7.71e-06]
+ [ 1.15e-04 -1.61e-05  6.21e-03  8.04e-04  2.89e-05  2.25e-04  2.67e-05 -2.02e-03  1.98e-02  4.93e-07  5.85e-05]
+ [ 4.96e-06 -9.91e-07  3.10e-04  1.09e-04 -4.33e-06  2.67e-05  1.97e-05 -1.13e-04  2.41e-03  2.16e-08 -1.36e-05]
+ [-1.11e-03  1.23e-04 -4.82e-02 -4.90e-03 -2.57e-04 -2.02e-03 -1.13e-04  7.34e-02 -1.74e-01 -4.76e-06 -3.30e-04]
+ [ 9.74e-03 -1.40e-03  5.36e-01  7.08e-02  2.45e-03  1.98e-02  2.41e-03 -1.74e-01  1.74e+00  4.18e-05  5.13e-03]
+ [ 1.26e-06 -5.02e-09  1.11e-05  1.92e-06  9.95e-08  4.93e-07  2.16e-08 -4.76e-06  4.18e-05  5.40e-09  2.85e-07]
+ [ 6.64e-05 -7.03e-07  7.46e-04  2.36e-04  7.71e-06  5.85e-05 -1.36e-05 -3.30e-04  5.13e-03  2.85e-07  6.07e-05]]
+
+Second treatment (partial reordering and cleaning)
+['omega_b', 'omega_cdm', 'H0', 'A_s', 'n_s', 'tau_reio', 'parameters_smg__2', 'A_planck', '', '', '']
+ /!\ Appending to an existing folder: using the log.param instead of
+     input/test_noslip_lite.param
+Running Monte Python v3.0.1
+
+with CLASS v2.4.5
+
+Testing likelihoods for:
+ -> Planck_highl_lite, Planck_lowl, Planck_lensing
+
+ /!\ PyFITS is deprecated, please use astropy.io.fits
+----
+clik version 6dc2a8cf3965
+  plik_cmbonly
+Checking likelihood '/scratch1/scratchdirs/micbru/NoSlip/planck/plc-2.0/../plc_2.0/hi_l/plik_lite/plik_lite_v18_TT.clik' on test data. got -101.798 expected -101.798 (diff 1.03567e-08)
+----
+In Planck_highl_lite, MontePython corrected nuisance parameter name A_Planck to A_planck
+----
+clik version 6dc2a8cf3965
+  bflike_smw
+Checking likelihood '/scratch1/scratchdirs/micbru/NoSlip/planck/plc-2.0/../plc_2.0/low_l/bflike/lowl_SMW_70_dx11d_2014_10_03_v5c_Ap.clik' on test data. got -5247.87 expected -5247.87 (diff 2.61964e-07)
+----
+Checking lensing likelihood '/scratch1/scratchdirs/micbru/NoSlip/planck/plc-2.0/../plc_2.0/lensing/smica_g30_ftl_full_pp.clik_lensing' on test data. got -5.91088 expected -5.91088 (diff 9.56746e-11)
+Creating chains/noslip_lite/2018-10-12_400__6.txt
+
+
+Input covariance matrix:
+['omega_b', 'omega_cdm', 'H0', 'A_s', 'n_s', 'tau_reio', 'parameters_smg__2', 'A_planck', 'z_reio', 'YHe', 'sigma8']
+[[ 2.93e-08 -1.17e-08  2.58e-05  4.46e-15  2.32e-07  1.15e-06  4.96e-08 -1.11e-07  9.74e-05  1.26e-08  6.64e-07]
+ [-1.17e-08  2.64e-06 -9.29e-04 -4.98e-14 -5.94e-06 -1.61e-05 -9.91e-07  1.23e-06 -1.40e-03 -5.02e-09 -7.03e-07]
+ [ 2.58e-05 -9.29e-04  3.60e-01  1.98e-11  2.30e-03  6.21e-03  3.10e-04 -4.82e-04  5.36e-01  1.11e-05  7.46e-04]
+ [ 4.46e-15 -4.98e-14  1.98e-11  3.03e-21  7.13e-14  8.04e-13  1.09e-13 -4.90e-14  7.08e-11  1.92e-15  2.36e-13]
+ [ 2.32e-07 -5.94e-06  2.30e-03  7.13e-14  2.88e-05  2.89e-05 -4.33e-06 -2.57e-06  2.45e-03  9.95e-08  7.71e-06]
+ [ 1.15e-06 -1.61e-05  6.21e-03  8.04e-13  2.89e-05  2.25e-04  2.67e-05 -2.02e-05  1.98e-02  4.93e-07  5.85e-05]
+ [ 4.96e-08 -9.91e-07  3.10e-04  1.09e-13 -4.33e-06  2.67e-05  1.97e-05 -1.13e-06  2.41e-03  2.16e-08 -1.36e-05]
+ [-1.11e-07  1.23e-06 -4.82e-04 -4.90e-14 -2.57e-06 -2.02e-05 -1.13e-06  7.34e-06 -1.74e-03 -4.76e-08 -3.30e-06]
+ [ 9.74e-05 -1.40e-03  5.36e-01  7.08e-11  2.45e-03  1.98e-02  2.41e-03 -1.74e-03  1.74e+00  4.18e-05  5.13e-03]
+ [ 1.26e-08 -5.02e-09  1.11e-05  1.92e-15  9.95e-08  4.93e-07  2.16e-08 -4.76e-08  4.18e-05  5.40e-09  2.85e-07]
+ [ 6.64e-07 -7.03e-07  7.46e-04  2.36e-13  7.71e-06  5.85e-05 -1.36e-05 -3.30e-06  5.13e-03  2.85e-07  6.07e-05]]
+
+First treatment (scaling)
+['omega_b', 'omega_cdm', 'H0', 'A_s', 'n_s', 'tau_reio', 'parameters_smg__2', 'A_planck', 'z_reio', 'YHe', 'sigma8']
+[[ 2.93e-04 -1.17e-06  2.58e-03  4.46e-04  2.32e-05  1.15e-04  4.96e-06 -1.11e-03  9.74e-03  1.26e-06  6.64e-05]
+ [-1.17e-06  2.64e-06 -9.29e-04 -4.98e-05 -5.94e-06 -1.61e-05 -9.91e-07  1.23e-04 -1.40e-03 -5.02e-09 -7.03e-07]
+ [ 2.58e-03 -9.29e-04  3.60e-01  1.98e-02  2.30e-03  6.21e-03  3.10e-04 -4.82e-02  5.36e-01  1.11e-05  7.46e-04]
+ [ 4.46e-04 -4.98e-05  1.98e-02  3.03e-03  7.13e-05  8.04e-04  1.09e-04 -4.90e-03  7.08e-02  1.92e-06  2.36e-04]
+ [ 2.32e-05 -5.94e-06  2.30e-03  7.13e-05  2.88e-05  2.89e-05 -4.33e-06 -2.57e-04  2.45e-03  9.95e-08  7.71e-06]
+ [ 1.15e-04 -1.61e-05  6.21e-03  8.04e-04  2.89e-05  2.25e-04  2.67e-05 -2.02e-03  1.98e-02  4.93e-07  5.85e-05]
+ [ 4.96e-06 -9.91e-07  3.10e-04  1.09e-04 -4.33e-06  2.67e-05  1.97e-05 -1.13e-04  2.41e-03  2.16e-08 -1.36e-05]
+ [-1.11e-03  1.23e-04 -4.82e-02 -4.90e-03 -2.57e-04 -2.02e-03 -1.13e-04  7.34e-02 -1.74e-01 -4.76e-06 -3.30e-04]
+ [ 9.74e-03 -1.40e-03  5.36e-01  7.08e-02  2.45e-03  1.98e-02  2.41e-03 -1.74e-01  1.74e+00  4.18e-05  5.13e-03]
+ [ 1.26e-06 -5.02e-09  1.11e-05  1.92e-06  9.95e-08  4.93e-07  2.16e-08 -4.76e-06  4.18e-05  5.40e-09  2.85e-07]
+ [ 6.64e-05 -7.03e-07  7.46e-04  2.36e-04  7.71e-06  5.85e-05 -1.36e-05 -3.30e-04  5.13e-03  2.85e-07  6.07e-05]]
+
+Second treatment (partial reordering and cleaning)
+['omega_b', 'omega_cdm', 'H0', 'A_s', 'n_s', 'tau_reio', 'parameters_smg__2', 'A_planck', '', '', '']
+[[ 2.93e-04 -1.17e-06  2.58e-03  4.46e-04  2.32e-05  1.15e-04  4.96e-06 -1.11e-03  0.00e+00  0.00e+00  0.00e+00]
+ [-1.17e-06  2.64e-06 -9.29e-04 -4.98e-05 -5.94e-06 -1.61e-05 -9.91e-07  1.23e-04  0.00e+00  0.00e+00  0.00e+00]
+ [ 2.58e-03 -9.29e-04  3.60e-01  1.98e-02  2.30e-03  6.21e-03  3.10e-04 -4.82e-02  0.00e+00  0.00e+00  0.00e+00]
+ [ 4.46e-04 -4.98e-05  1.98e-02  3.03e-03  7.13e-05  8.04e-04  1.09e-04 -4.90e-03  0.00e+00  0.00e+00  0.00e+00]
+ [ 2.32e-05 -5.94e-06  2.30e-03  7.13e-05  2.88e-05  2.89e-05 -4.33e-06 -2.57e-04  0.00e+00  0.00e+00  0.00e+00]
+ [ 1.15e-04 -1.61e-05  6.21e-03  8.04e-04  2.89e-05  2.25e-04  2.67e-05 -2.02e-03  0.00e+00  0.00e+00  0.00e+00]
+ [ 4.96e-06 -9.91e-07  3.10e-04  1.09e-04 -4.33e-06  2.67e-05  1.97e-05 -1.13e-04  0.00e+00  0.00e+00  0.00e+00]
+ [-1.11e-03  1.23e-04 -4.82e-02 -4.90e-03 -2.57e-04 -2.02e-03 -1.13e-04  7.34e-02  0.00e+00  0.00e+00  0.00e+00]
+ [ 0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00]
+ [ 0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00]
+ [ 0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00]]
+
+Deduced starting covariance matrix:
+['omega_b', 'omega_cdm', 'H0', 'A_s', 'n_s', 'tau_reio', 'parameters_smg__2', 'A_planck']
+[[ 2.93e-04 -1.17e-06  2.58e-03  4.46e-04  2.32e-05  1.15e-04  4.96e-06 -1.11e-03]
+ [-1.17e-06  2.64e-06 -9.29e-04 -4.98e-05 -5.94e-06 -1.61e-05 -9.91e-07  1.23e-04]
+ [ 2.58e-03 -9.29e-04  3.60e-01  1.98e-02  2.30e-03  6.21e-03  3.10e-04 -4.82e-02]
+ [ 4.46e-04 -4.98e-05  1.98e-02  3.03e-03  7.13e-05  8.04e-04  1.09e-04 -4.90e-03]
+ [ 2.32e-05 -5.94e-06  2.30e-03  7.13e-05  2.88e-05  2.89e-05 -4.33e-06 -2.57e-04]
+ [ 1.15e-04 -1.61e-05  6.21e-03  8.04e-04  2.89e-05  2.25e-04  2.67e-05 -2.02e-03]
+ [ 4.96e-06 -9.91e-07  3.10e-04  1.09e-04 -4.33e-06  2.67e-05  1.97e-05 -1.13e-04]
+ [-1.11e-03  1.23e-04 -4.82e-02 -4.90e-03 -2.57e-04 -2.02e-03 -1.13e-04  7.34e-02]]
+Update routine is enabled with value 300 (recommended: 50)
+This number is rescaled by cycle length 11 (N_slow + f_fast * N_fast) to 3300
+
+
+Starting point for rescaled parameters:
+from best-fit file :  omega_b  =  2.214838
+from best-fit file :  omega_cdm  =  0.1196599
+from best-fit file :  H0  =  67.16677
+from best-fit file :  A_s  =  2.166821
+from best-fit file :  n_s  =  0.9657668
+from best-fit file :  tau_reio  =  0.07277187
+from best-fit file :  parameters_smg__2  =  0.0005753047
+from best-fit file :  A_planck  =  99.98899999999999
+
+#  -LogLkl	1e+02omega_b    omega_cdm       H0              1e+09A_s        n_s             tau_reio        parameters_smg__21e+02A_planck   z_reio          YHe             sigma8          
+1  5360.57	2.197507e+00	1.229773e-01	6.585098e+01	2.121528e+00	9.534576e-01	5.432368e-02	4.796042e-03	1.002994e+02	7.831497e+00	2.476702e-01	8.150342e-01	
+2  5361.88	2.211049e+00	1.238551e-01	6.566116e+01	2.112118e+00	9.565228e-01	5.327748e-02	3.178628e-03	1.001540e+02	7.705154e+00	2.477285e-01	8.186624e-01	
+3  5363.27	2.193206e+00	1.243071e-01	6.554721e+01	2.104057e+00	9.526504e-01	4.671779e-02	6.131512e-04	1.004656e+02	7.048874e+00	2.476517e-01	8.223896e-01	
+1  5360.85	2.192097e+00	1.229287e-01	6.608773e+01	2.134220e+00	9.541450e-01	5.799740e-02	4.750836e-03	1.001975e+02	8.223862e+00	2.476469e-01	8.186061e-01	
+1  5360.38	2.192097e+00	1.229287e-01	6.608773e+01	2.134220e+00	9.541450e-01	5.799740e-02	4.750836e-03	1.001647e+02	8.223862e+00	2.476469e-01	8.186061e-01	
+1  5359.99	2.192097e+00	1.229287e-01	6.608773e+01	2.134220e+00	9.541450e-01	5.799740e-02	4.750836e-03	1.001153e+02	8.223862e+00	2.476469e-01	8.186061e-01	
+2  5360.1	2.192097e+00	1.229287e-01	6.608773e+01	2.134220e+00	9.541450e-01	5.799740e-02	4.750836e-03	1.001348e+02	8.223862e+00	2.476469e-01	8.186061e-01	
+1  5361.42	2.195688e+00	1.214730e-01	6.679868e+01	2.133234e+00	9.567045e-01	6.123828e-02	2.632270e-03	9.992376e+01	8.517258e+00	2.476624e-01	8.181061e-01	
+[[ 2.93e-04 -1.17e-06  2.58e-03  4.46e-04  2.32e-05  1.15e-04  4.96e-06 -1.11e-03  0.00e+00  0.00e+00  0.00e+00]
+ [-1.17e-06  2.64e-06 -9.29e-04 -4.98e-05 -5.94e-06 -1.61e-05 -9.91e-07  1.23e-04  0.00e+00  0.00e+00  0.00e+00]
+ [ 2.58e-03 -9.29e-04  3.60e-01  1.98e-02  2.30e-03  6.21e-03  3.10e-04 -4.82e-02  0.00e+00  0.00e+00  0.00e+00]
+ [ 4.46e-04 -4.98e-05  1.98e-02  3.03e-03  7.13e-05  8.04e-04  1.09e-04 -4.90e-03  0.00e+00  0.00e+00  0.00e+00]
+ [ 2.32e-05 -5.94e-06  2.30e-03  7.13e-05  2.88e-05  2.89e-05 -4.33e-06 -2.57e-04  0.00e+00  0.00e+00  0.00e+00]
+ [ 1.15e-04 -1.61e-05  6.21e-03  8.04e-04  2.89e-05  2.25e-04  2.67e-05 -2.02e-03  0.00e+00  0.00e+00  0.00e+00]
+ [ 4.96e-06 -9.91e-07  3.10e-04  1.09e-04 -4.33e-06  2.67e-05  1.97e-05 -1.13e-04  0.00e+00  0.00e+00  0.00e+00]
+ [-1.11e-03  1.23e-04 -4.82e-02 -4.90e-03 -2.57e-04 -2.02e-03 -1.13e-04  7.34e-02  0.00e+00  0.00e+00  0.00e+00]
+ [ 0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00]
+ [ 0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00]
+ [ 0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00]]
+
+Deduced starting covariance matrix:
+['omega_b', 'omega_cdm', 'H0', 'A_s', 'n_s', 'tau_reio', 'parameters_smg__2', 'A_planck']
+[[ 2.93e-04 -1.17e-06  2.58e-03  4.46e-04  2.32e-05  1.15e-04  4.96e-06 -1.11e-03]
+ [-1.17e-06  2.64e-06 -9.29e-04 -4.98e-05 -5.94e-06 -1.61e-05 -9.91e-07  1.23e-04]
+ [ 2.58e-03 -9.29e-04  3.60e-01  1.98e-02  2.30e-03  6.21e-03  3.10e-04 -4.82e-02]
+ [ 4.46e-04 -4.98e-05  1.98e-02  3.03e-03  7.13e-05  8.04e-04  1.09e-04 -4.90e-03]
+ [ 2.32e-05 -5.94e-06  2.30e-03  7.13e-05  2.88e-05  2.89e-05 -4.33e-06 -2.57e-04]
+ [ 1.15e-04 -1.61e-05  6.21e-03  8.04e-04  2.89e-05  2.25e-04  2.67e-05 -2.02e-03]
+ [ 4.96e-06 -9.91e-07  3.10e-04  1.09e-04 -4.33e-06  2.67e-05  1.97e-05 -1.13e-04]
+ [-1.11e-03  1.23e-04 -4.82e-02 -4.90e-03 -2.57e-04 -2.02e-03 -1.13e-04  7.34e-02]]
+Update routine is enabled with value 300 (recommended: 50)
+This number is rescaled by cycle length 11 (N_slow + f_fast * N_fast) to 3300
+
+
+Starting point for rescaled parameters:
+from best-fit file :  omega_b  =  2.214838
+from best-fit file :  omega_cdm  =  0.1196599
+from best-fit file :  H0  =  67.16677
+from best-fit file :  A_s  =  2.166821
+from best-fit file :  n_s  =  0.9657668
+from best-fit file :  tau_reio  =  0.07277187
+from best-fit file :  parameters_smg__2  =  0.0005753047
+from best-fit file :  A_planck  =  99.98899999999999
+
+#  -LogLkl	1e+02omega_b    omega_cdm       H0              1e+09A_s        n_s             tau_reio        parameters_smg__21e+02A_planck   z_reio          YHe             sigma8          
+5  5359.87	2.213670e+00	1.202751e-01	6.684799e+01	2.147253e+00	9.660063e-01	6.511904e-02	2.319056e-03	1.002560e+02	8.828903e+00	2.477398e-01	8.179447e-01	
+4  5357.04	2.222190e+00	1.175369e-01	6.807665e+01	2.191836e+00	9.693748e-01	7.983831e-02	1.200946e-03	1.000517e+02	1.012497e+01	2.477764e-01	8.198235e-01	
+7  5356.64	2.222190e+00	1.175369e-01	6.807665e+01	2.191836e+00	9.693748e-01	7.983831e-02	1.200946e-03	1.000000e+02	1.012497e+01	2.477764e-01	8.198235e-01	
+2  5356.55	2.215737e+00	1.182262e-01	6.793200e+01	2.150601e+00	9.698739e-01	6.707912e-02	3.152462e-04	1.002260e+02	8.975601e+00	2.477487e-01	8.166304e-01	
+1  5357.5	2.215737e+00	1.182262e-01	6.793200e+01	2.150601e+00	9.698739e-01	6.707912e-02	3.152462e-04	1.000825e+02	8.975601e+00	2.477487e-01	8.166304e-01	
+1  5356.77	2.215737e+00	1.182262e-01	6.793200e+01	2.150601e+00	9.698739e-01	6.707912e-02	3.152462e-04	1.001334e+02	8.975601e+00	2.477487e-01	8.166304e-01	
+1  5357.55	2.215737e+00	1.182262e-01	6.793200e+01	2.150601e+00	9.698739e-01	6.707912e-02	3.152462e-04	1.000800e+02	8.975601e+00	2.477487e-01	8.166304e-01	
+8  5358.4	2.215737e+00	1.182262e-01	6.793200e+01	2.150601e+00	9.698739e-01	6.707912e-02	3.152462e-04	1.000415e+02	8.975601e+00	2.477487e-01	8.166304e-01	
+[[ 2.93e-04 -1.17e-06  2.58e-03  4.46e-04  2.32e-05  1.15e-04  4.96e-06 -1.11e-03  0.00e+00  0.00e+00  0.00e+00]
+ [-1.17e-06  2.64e-06 -9.29e-04 -4.98e-05 -5.94e-06 -1.61e-05 -9.91e-07  1.23e-04  0.00e+00  0.00e+00  0.00e+00]
+ [ 2.58e-03 -9.29e-04  3.60e-01  1.98e-02  2.30e-03  6.21e-03  3.10e-04 -4.82e-02  0.00e+00  0.00e+00  0.00e+00]
+ [ 4.46e-04 -4.98e-05  1.98e-02  3.03e-03  7.13e-05  8.04e-04  1.09e-04 -4.90e-03  0.00e+00  0.00e+00  0.00e+00]
+ [ 2.32e-05 -5.94e-06  2.30e-03  7.13e-05  2.88e-05  2.89e-05 -4.33e-06 -2.57e-04  0.00e+00  0.00e+00  0.00e+00]
+ [ 1.15e-04 -1.61e-05  6.21e-03  8.04e-04  2.89e-05  2.25e-04  2.67e-05 -2.02e-03  0.00e+00  0.00e+00  0.00e+00]
+ [ 4.96e-06 -9.91e-07  3.10e-04  1.09e-04 -4.33e-06  2.67e-05  1.97e-05 -1.13e-04  0.00e+00  0.00e+00  0.00e+00]
+ [-1.11e-03  1.23e-04 -4.82e-02 -4.90e-03 -2.57e-04 -2.02e-03 -1.13e-04  7.34e-02  0.00e+00  0.00e+00  0.00e+00]
+ [ 0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00]
+ [ 0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00]
+ [ 0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00]]
+
+Deduced starting covariance matrix:
+['omega_b', 'omega_cdm', 'H0', 'A_s', 'n_s', 'tau_reio', 'parameters_smg__2', 'A_planck']
+[[ 2.93e-04 -1.17e-06  2.58e-03  4.46e-04  2.32e-05  1.15e-04  4.96e-06 -1.11e-03]
+ [-1.17e-06  2.64e-06 -9.29e-04 -4.98e-05 -5.94e-06 -1.61e-05 -9.91e-07  1.23e-04]
+ [ 2.58e-03 -9.29e-04  3.60e-01  1.98e-02  2.30e-03  6.21e-03  3.10e-04 -4.82e-02]
+ [ 4.46e-04 -4.98e-05  1.98e-02  3.03e-03  7.13e-05  8.04e-04  1.09e-04 -4.90e-03]
+ [ 2.32e-05 -5.94e-06  2.30e-03  7.13e-05  2.88e-05  2.89e-05 -4.33e-06 -2.57e-04]
+ [ 1.15e-04 -1.61e-05  6.21e-03  8.04e-04  2.89e-05  2.25e-04  2.67e-05 -2.02e-03]
+ [ 4.96e-06 -9.91e-07  3.10e-04  1.09e-04 -4.33e-06  2.67e-05  1.97e-05 -1.13e-04]
+ [-1.11e-03  1.23e-04 -4.82e-02 -4.90e-03 -2.57e-04 -2.02e-03 -1.13e-04  7.34e-02]]
+Update routine is enabled with value 300 (recommended: 50)
+This number is rescaled by cycle length 11 (N_slow + f_fast * N_fast) to 3300
+
+
+Starting point for rescaled parameters:
+from best-fit file :  omega_b  =  2.214838
+from best-fit file :  omega_cdm  =  0.1196599
+from best-fit file :  H0  =  67.16677
+from best-fit file :  A_s  =  2.166821
+from best-fit file :  n_s  =  0.9657668
+from best-fit file :  tau_reio  =  0.07277187
+from best-fit file :  parameters_smg__2  =  0.0005753047
+from best-fit file :  A_planck  =  99.98899999999999
+
+#  -LogLkl	1e+02omega_b    omega_cdm       H0              1e+09A_s        n_s             tau_reio        parameters_smg__21e+02A_planck   z_reio          YHe             sigma8          
+2  5359.24	2.215324e+00	1.200579e-01	6.700831e+01	2.202917e+00	9.653719e-01	7.935248e-02	3.966164e-03	1.001194e+02	1.015726e+01	2.477469e-01	8.252393e-01	
+5  5360.78	2.232451e+00	1.201999e-01	6.707537e+01	2.217903e+00	9.619359e-01	8.309540e-02	6.009743e-03	9.999981e+01	1.044644e+01	2.478202e-01	8.236331e-01	
+1  5361.07	2.232451e+00	1.201999e-01	6.707537e+01	2.217903e+00	9.619359e-01	8.309540e-02	6.009743e-03	1.000164e+02	1.044644e+01	2.478202e-01	8.236331e-01	
+1  5360.34	2.232451e+00	1.201999e-01	6.707537e+01	2.217903e+00	9.619359e-01	8.309540e-02	6.009743e-03	9.983398e+01	1.044644e+01	2.478202e-01	8.236331e-01	
+3  5360.01	2.232451e+00	1.201999e-01	6.707537e+01	2.217903e+00	9.619359e-01	8.309540e-02	6.009743e-03	9.987899e+01	1.044644e+01	2.478202e-01	8.236331e-01	
+4  5359.6	2.220313e+00	1.210214e-01	6.662089e+01	2.159135e+00	9.597926e-01	6.699824e-02	2.258313e-03	1.000444e+02	9.007187e+00	2.477683e-01	8.204765e-01	
+2  5359.66	2.223071e+00	1.201917e-01	6.708084e+01	2.203373e+00	9.589412e-01	7.514025e-02	7.009540e-03	1.002446e+02	9.751907e+00	2.477801e-01	8.191510e-01	
+2  5359.52	2.223071e+00	1.201917e-01	6.708084e+01	2.203373e+00	9.589412e-01	7.514025e-02	7.009540e-03	1.003039e+02	9.751907e+00	2.477801e-01	8.191510e-01	
+[[ 2.93e-04 -1.17e-06  2.58e-03  4.46e-04  2.32e-05  1.15e-04  4.96e-06 -1.11e-03  0.00e+00  0.00e+00  0.00e+00]
+ [-1.17e-06  2.64e-06 -9.29e-04 -4.98e-05 -5.94e-06 -1.61e-05 -9.91e-07  1.23e-04  0.00e+00  0.00e+00  0.00e+00]
+ [ 2.58e-03 -9.29e-04  3.60e-01  1.98e-02  2.30e-03  6.21e-03  3.10e-04 -4.82e-02  0.00e+00  0.00e+00  0.00e+00]
+ [ 4.46e-04 -4.98e-05  1.98e-02  3.03e-03  7.13e-05  8.04e-04  1.09e-04 -4.90e-03  0.00e+00  0.00e+00  0.00e+00]
+ [ 2.32e-05 -5.94e-06  2.30e-03  7.13e-05  2.88e-05  2.89e-05 -4.33e-06 -2.57e-04  0.00e+00  0.00e+00  0.00e+00]
+ [ 1.15e-04 -1.61e-05  6.21e-03  8.04e-04  2.89e-05  2.25e-04  2.67e-05 -2.02e-03  0.00e+00  0.00e+00  0.00e+00]
+ [ 4.96e-06 -9.91e-07  3.10e-04  1.09e-04 -4.33e-06  2.67e-05  1.97e-05 -1.13e-04  0.00e+00  0.00e+00  0.00e+00]
+ [-1.11e-03  1.23e-04 -4.82e-02 -4.90e-03 -2.57e-04 -2.02e-03 -1.13e-04  7.34e-02  0.00e+00  0.00e+00  0.00e+00]
+ [ 0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00]
+ [ 0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00]
+ [ 0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00]]
+
+Deduced starting covariance matrix:
+['omega_b', 'omega_cdm', 'H0', 'A_s', 'n_s', 'tau_reio', 'parameters_smg__2', 'A_planck']
+[[ 2.93e-04 -1.17e-06  2.58e-03  4.46e-04  2.32e-05  1.15e-04  4.96e-06 -1.11e-03]
+ [-1.17e-06  2.64e-06 -9.29e-04 -4.98e-05 -5.94e-06 -1.61e-05 -9.91e-07  1.23e-04]
+ [ 2.58e-03 -9.29e-04  3.60e-01  1.98e-02  2.30e-03  6.21e-03  3.10e-04 -4.82e-02]
+ [ 4.46e-04 -4.98e-05  1.98e-02  3.03e-03  7.13e-05  8.04e-04  1.09e-04 -4.90e-03]
+ [ 2.32e-05 -5.94e-06  2.30e-03  7.13e-05  2.88e-05  2.89e-05 -4.33e-06 -2.57e-04]
+ [ 1.15e-04 -1.61e-05  6.21e-03  8.04e-04  2.89e-05  2.25e-04  2.67e-05 -2.02e-03]
+ [ 4.96e-06 -9.91e-07  3.10e-04  1.09e-04 -4.33e-06  2.67e-05  1.97e-05 -1.13e-04]
+ [-1.11e-03  1.23e-04 -4.82e-02 -4.90e-03 -2.57e-04 -2.02e-03 -1.13e-04  7.34e-02]]
+Update routine is enabled with value 300 (recommended: 50)
+This number is rescaled by cycle length 11 (N_slow + f_fast * N_fast) to 3300
+
+
+Starting point for rescaled parameters:
+from best-fit file :  omega_b  =  2.214838
+from best-fit file :  omega_cdm  =  0.1196599
+from best-fit file :  H0  =  67.16677
+from best-fit file :  A_s  =  2.166821
+from best-fit file :  n_s  =  0.9657668
+from best-fit file :  tau_reio  =  0.07277187
+from best-fit file :  parameters_smg__2  =  0.0005753047
+from best-fit file :  A_planck  =  99.98899999999999
+
+#  -LogLkl	1e+02omega_b    omega_cdm       H0              1e+09A_s        n_s             tau_reio        parameters_smg__21e+02A_planck   z_reio          YHe             sigma8          
+4  5361.28	2.185194e+00	1.191600e-01	6.697668e+01	2.140108e+00	9.596841e-01	6.619335e-02	3.526008e-03	1.000529e+02	8.986130e+00	2.476170e-01	8.103369e-01	
+3  5360.04	2.189352e+00	1.207965e-01	6.644340e+01	2.128274e+00	9.600172e-01	6.277270e-02	4.484275e-03	9.999151e+01	8.670975e+00	2.476350e-01	8.119631e-01	
+3  5358.7	2.189352e+00	1.207965e-01	6.644340e+01	2.128274e+00	9.600172e-01	6.277270e-02	4.484275e-03	9.989852e+01	8.670975e+00	2.476350e-01	8.119631e-01	
+2  5361.48	2.189352e+00	1.207965e-01	6.644340e+01	2.128274e+00	9.600172e-01	6.277270e-02	4.484275e-03	1.000458e+02	8.670975e+00	2.476350e-01	8.119631e-01	
+1  5359.37	2.202530e+00	1.211535e-01	6.659620e+01	2.156953e+00	9.597180e-01	6.680598e-02	6.442926e-03	1.001839e+02	9.039474e+00	2.476919e-01	8.155481e-01	
+1  5361.48	2.222866e+00	1.216901e-01	6.647335e+01	2.168152e+00	9.615579e-01	6.940820e-02	6.511959e-03	1.001564e+02	9.244431e+00	2.477792e-01	8.186944e-01	
+1  5361.23	2.184764e+00	1.213384e-01	6.636591e+01	2.095143e+00	9.605195e-01	5.110484e-02	2.089437e-03	1.003466e+02	7.496689e+00	2.476151e-01	8.115991e-01	
+1  5361.32	2.187525e+00	1.212073e-01	6.638709e+01	2.110026e+00	9.603930e-01	5.337432e-02	3.508787e-03	1.004662e+02	7.726913e+00	2.476271e-01	8.116922e-01	
+[[ 2.93e-04 -1.17e-06  2.58e-03  4.46e-04  2.32e-05  1.15e-04  4.96e-06 -1.11e-03  0.00e+00  0.00e+00  0.00e+00]
+ [-1.17e-06  2.64e-06 -9.29e-04 -4.98e-05 -5.94e-06 -1.61e-05 -9.91e-07  1.23e-04  0.00e+00  0.00e+00  0.00e+00]
+ [ 2.58e-03 -9.29e-04  3.60e-01  1.98e-02  2.30e-03  6.21e-03  3.10e-04 -4.82e-02  0.00e+00  0.00e+00  0.00e+00]
+ [ 4.46e-04 -4.98e-05  1.98e-02  3.03e-03  7.13e-05  8.04e-04  1.09e-04 -4.90e-03  0.00e+00  0.00e+00  0.00e+00]
+ [ 2.32e-05 -5.94e-06  2.30e-03  7.13e-05  2.88e-05  2.89e-05 -4.33e-06 -2.57e-04  0.00e+00  0.00e+00  0.00e+00]
+ [ 1.15e-04 -1.61e-05  6.21e-03  8.04e-04  2.89e-05  2.25e-04  2.67e-05 -2.02e-03  0.00e+00  0.00e+00  0.00e+00]
+ [ 4.96e-06 -9.91e-07  3.10e-04  1.09e-04 -4.33e-06  2.67e-05  1.97e-05 -1.13e-04  0.00e+00  0.00e+00  0.00e+00]
+ [-1.11e-03  1.23e-04 -4.82e-02 -4.90e-03 -2.57e-04 -2.02e-03 -1.13e-04  7.34e-02  0.00e+00  0.00e+00  0.00e+00]
+ [ 0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00]
+ [ 0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00]
+ [ 0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00]]
+
+Deduced starting covariance matrix:
+['omega_b', 'omega_cdm', 'H0', 'A_s', 'n_s', 'tau_reio', 'parameters_smg__2', 'A_planck']
+[[ 2.93e-04 -1.17e-06  2.58e-03  4.46e-04  2.32e-05  1.15e-04  4.96e-06 -1.11e-03]
+ [-1.17e-06  2.64e-06 -9.29e-04 -4.98e-05 -5.94e-06 -1.61e-05 -9.91e-07  1.23e-04]
+ [ 2.58e-03 -9.29e-04  3.60e-01  1.98e-02  2.30e-03  6.21e-03  3.10e-04 -4.82e-02]
+ [ 4.46e-04 -4.98e-05  1.98e-02  3.03e-03  7.13e-05  8.04e-04  1.09e-04 -4.90e-03]
+ [ 2.32e-05 -5.94e-06  2.30e-03  7.13e-05  2.88e-05  2.89e-05 -4.33e-06 -2.57e-04]
+ [ 1.15e-04 -1.61e-05  6.21e-03  8.04e-04  2.89e-05  2.25e-04  2.67e-05 -2.02e-03]
+ [ 4.96e-06 -9.91e-07  3.10e-04  1.09e-04 -4.33e-06  2.67e-05  1.97e-05 -1.13e-04]
+ [-1.11e-03  1.23e-04 -4.82e-02 -4.90e-03 -2.57e-04 -2.02e-03 -1.13e-04  7.34e-02]]
+Update routine is enabled with value 300 (recommended: 50)
+This number is rescaled by cycle length 11 (N_slow + f_fast * N_fast) to 3300
+
+
+Starting point for rescaled parameters:
+from best-fit file :  omega_b  =  2.214838
+from best-fit file :  omega_cdm  =  0.1196599
+from best-fit file :  H0  =  67.16677
+from best-fit file :  A_s  =  2.166821
+from best-fit file :  n_s  =  0.9657668
+from best-fit file :  tau_reio  =  0.07277187
+from best-fit file :  parameters_smg__2  =  0.0005753047
+from best-fit file :  A_planck  =  99.98899999999999
+
+#  -LogLkl	1e+02omega_b    omega_cdm       H0              1e+09A_s        n_s             tau_reio        parameters_smg__21e+02A_planck   z_reio          YHe             sigma8          
+2  5361.13	2.207587e+00	1.192606e-01	6.718753e+01	2.197159e+00	9.650996e-01	8.380283e-02	3.389282e-03	9.967778e+01	1.056296e+01	2.477136e-01	8.224665e-01	
+2  5358.32	2.216538e+00	1.201584e-01	6.709309e+01	2.185787e+00	9.659342e-01	7.720206e-02	2.197295e-03	9.992912e+01	9.959320e+00	2.477521e-01	8.254102e-01	
+2  5361.23	2.211572e+00	1.207798e-01	6.688077e+01	2.198722e+00	9.653915e-01	8.234815e-02	1.031181e-03	9.967765e+01	1.045627e+01	2.477308e-01	8.318339e-01	
+4  5361.33	2.193952e+00	1.227390e-01	6.596285e+01	2.090261e+00	9.571239e-01	5.419315e-02	1.984836e-03	9.973205e+01	7.822372e+00	2.476549e-01	8.138095e-01	
+7  5359.58	2.193952e+00	1.227390e-01	6.596285e+01	2.090261e+00	9.571239e-01	5.419315e-02	1.984836e-03	9.963317e+01	7.822372e+00	2.476549e-01	8.138095e-01	
+1  5360.53	2.204803e+00	1.238814e-01	6.563849e+01	2.061952e+00	9.550572e-01	4.449583e-02	1.891140e-03	9.977959e+01	6.773026e+00	2.477017e-01	8.107743e-01	
+5  5359.94	2.204803e+00	1.238814e-01	6.563849e+01	2.061952e+00	9.550572e-01	4.449583e-02	1.891140e-03	9.970108e+01	6.773026e+00	2.477017e-01	8.107743e-01	
+1  5360.2	2.190629e+00	1.242148e-01	6.551100e+01	2.078622e+00	9.519303e-01	4.610897e-02	2.106289e-03	9.982891e+01	6.985703e+00	2.476405e-01	8.146608e-01	
+[[ 2.93e-04 -1.17e-06  2.58e-03  4.46e-04  2.32e-05  1.15e-04  4.96e-06 -1.11e-03  0.00e+00  0.00e+00  0.00e+00]
+ [-1.17e-06  2.64e-06 -9.29e-04 -4.98e-05 -5.94e-06 -1.61e-05 -9.91e-07  1.23e-04  0.00e+00  0.00e+00  0.00e+00]
+ [ 2.58e-03 -9.29e-04  3.60e-01  1.98e-02  2.30e-03  6.21e-03  3.10e-04 -4.82e-02  0.00e+00  0.00e+00  0.00e+00]
+ [ 4.46e-04 -4.98e-05  1.98e-02  3.03e-03  7.13e-05  8.04e-04  1.09e-04 -4.90e-03  0.00e+00  0.00e+00  0.00e+00]
+ [ 2.32e-05 -5.94e-06  2.30e-03  7.13e-05  2.88e-05  2.89e-05 -4.33e-06 -2.57e-04  0.00e+00  0.00e+00  0.00e+00]
+ [ 1.15e-04 -1.61e-05  6.21e-03  8.04e-04  2.89e-05  2.25e-04  2.67e-05 -2.02e-03  0.00e+00  0.00e+00  0.00e+00]
+ [ 4.96e-06 -9.91e-07  3.10e-04  1.09e-04 -4.33e-06  2.67e-05  1.97e-05 -1.13e-04  0.00e+00  0.00e+00  0.00e+00]
+ [-1.11e-03  1.23e-04 -4.82e-02 -4.90e-03 -2.57e-04 -2.02e-03 -1.13e-04  7.34e-02  0.00e+00  0.00e+00  0.00e+00]
+ [ 0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00]
+ [ 0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00]
+ [ 0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00  0.00e+00]]
+
+Deduced starting covariance matrix:
+['omega_b', 'omega_cdm', 'H0', 'A_s', 'n_s', 'tau_reio', 'parameters_smg__2', 'A_planck']
+[[ 2.93e-04 -1.17e-06  2.58e-03  4.46e-04  2.32e-05  1.15e-04  4.96e-06 -1.11e-03]
+ [-1.17e-06  2.64e-06 -9.29e-04 -4.98e-05 -5.94e-06 -1.61e-05 -9.91e-07  1.23e-04]
+ [ 2.58e-03 -9.29e-04  3.60e-01  1.98e-02  2.30e-03  6.21e-03  3.10e-04 -4.82e-02]
+ [ 4.46e-04 -4.98e-05  1.98e-02  3.03e-03  7.13e-05  8.04e-04  1.09e-04 -4.90e-03]
+ [ 2.32e-05 -5.94e-06  2.30e-03  7.13e-05  2.88e-05  2.89e-05 -4.33e-06 -2.57e-04]
+ [ 1.15e-04 -1.61e-05  6.21e-03  8.04e-04  2.89e-05  2.25e-04  2.67e-05 -2.02e-03]
+ [ 4.96e-06 -9.91e-07  3.10e-04  1.09e-04 -4.33e-06  2.67e-05  1.97e-05 -1.13e-04]
+ [-1.11e-03  1.23e-04 -4.82e-02 -4.90e-03 -2.57e-04 -2.02e-03 -1.13e-04  7.34e-02]]
+Update routine is enabled with value 300 (recommended: 50)
+This number is rescaled by cycle length 11 (N_slow + f_fast * N_fast) to 3300
+
+
+Starting point for rescaled parameters:
+from best-fit file :  omega_b  =  2.214838
+from best-fit file :  omega_cdm  =  0.1196599
+from best-fit file :  H0  =  67.16677
+from best-fit file :  A_s  =  2.166821
+from best-fit file :  n_s  =  0.9657668
+from best-fit file :  tau_reio  =  0.07277187
+from best-fit file :  parameters_smg__2  =  0.0005753047
+from best-fit file :  A_planck  =  99.98899999999999
+
+#  -LogLkl	1e+02omega_b    omega_cdm       H0              1e+09A_s        n_s             tau_reio        parameters_smg__21e+02A_planck   z_reio          YHe             sigma8          
+1  5359.57	2.223077e+00	1.201702e-01	6.703922e+01	2.176161e+00	9.641161e-01	7.570164e-02	3.472780e-04	9.984099e+01	9.803497e+00	2.477801e-01	8.252318e-01	
+6  5358.97	2.216591e+00	1.202994e-01	6.702772e+01	2.148873e+00	9.604355e-01	7.020043e-02	2.628084e-03	9.969461e+01	9.309708e+00	2.477523e-01	8.165184e-01	
+7  5358.63	2.216591e+00	1.202994e-01	6.702772e+01	2.148873e+00	9.604355e-01	7.020043e-02	2.628084e-03	9.966503e+01	9.309708e+00	2.477523e-01	8.165184e-01	
+1  5360.27	2.223368e+00	1.191634e-01	6.748450e+01	2.177862e+00	9.635422e-01	7.986952e-02	6.940253e-03	9.952548e+01	1.016147e+01	2.477814e-01	8.125724e-01	
+3  5359.35	2.218903e+00	1.202171e-01	6.741614e+01	2.117232e+00	9.647381e-01	6.154169e-02	2.048877e-03	9.978122e+01	8.467422e+00	2.477623e-01	8.132278e-01	
+1  5358.97	2.218903e+00	1.202171e-01	6.741614e+01	2.117232e+00	9.647381e-01	6.154169e-02	2.048877e-03	9.970998e+01	8.467422e+00	2.477623e-01	8.132278e-01	
+1  5358.97	2.218903e+00	1.202171e-01	6.741614e+01	2.117232e+00	9.647381e-01	6.154169e-02	2.048877e-03	9.971477e+01	8.467422e+00	2.477623e-01	8.132278e-01	
+9  5359.32	2.218903e+00	1.202171e-01	6.741614e+01	2.117232e+00	9.647381e-01	6.154169e-02	2.048877e-03	9.964949e+01	8.467422e+00	2.477623e-01	8.132278e-01	
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** STEP 11043671.0 ON nid01911 CANCELLED AT 2018-10-12T12:53:08 DUE TO TIME LIMIT ***
+slurmstepd: error: *** JOB 11043671 ON nid01911 CANCELLED AT 2018-10-12T12:53:08 DUE TO TIME LIMIT ***
+3  5359.54	2.223071e+00	1.201917e-01	6.708084e+01	2.203373e+00	9.589412e-01	7.514025e-02	7.009540e-03	1.003120e+02	9.751907e+00	2.477801e-01	8.1915102  5359.99	2.191220e+00	1.215232e-01	6.662500e+01	2.133407e+00	9.563599e-01	6.160914e-02	4.345034e-03	9.992360e+01	8.566391e+00	2.476431e-01	8.1552332  5360.5	2.201086e+00	1.212875e-01	6.648232e+01	2.106086e+00	9.565367e-01	5.208351e-02	7.942363e-05	1.003948e+02	7.561966e+00	2.476857e-01	8.145196e2  5359.68	2.196391e+00	1.228872e-01	6.595329e+01	2.092804e+00	9.566241e-01	5.482217e-02	3.539754e-03	9.952384e+01	7.884842e+00	2.476654e-01	8.1229331  5359.44	2.215737e+00	1.182262e-01	6.793200e+01	2.150601e+00	9.698739e-01	6.707912e-02	3.152462e-04	1.003837e+02	8.975601e+00	2.477487e-01	8.166304e8  5359.24	2.218903e+00	1.202171e-01	6.741614e+01	2.117232e+00	9.647381e-01	6.154169e-02	2.048877e-03	9.977107e+01	8.467422e+00	2.477623e-01	8.13227srun: got SIGCONT
+srun: forcing job termination

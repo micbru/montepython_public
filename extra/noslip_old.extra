@@ -1,0 +1,2 @@
+# Only plot the 7 main parameters:
+info.to_plot = {'omega_b', 'omega_cdm', 'H0', 'A_s', 'n_s', 'tau_reio', 'parameters_smg__2'}

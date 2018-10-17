@@ -1,7 +1,8 @@
+import matplotlib.pyplot as plt
 # Change them to python accordingly
-info.to_change = {'omega_b': r'$\Omega_b$', 'omega_cdm':r'$\Omega_{\rm cdm}$', 'H0':r'$H_0$','A_s':r'$A_s$','n_s':r'$n_s$','tau_reio':r'$\tau_{\rm reio}$','parameters_smg__2':r'$c_M$'}
+info.to_change = {'omega_b': r'$10^{-2} \Omega_b$', 'omega_cdm':r'$\Omega_{\rm cdm}$', 'H0':r'$H_0$','A_s':r'$10^{-9} A_s$','n_s':r'$n_s$','tau_reio':r'$\tau_{\rm reio}$','parameters_smg__2':r'$c_M$'}
 # Only plot the 7 main parameters:
-info.to_plot = {r'$\Omega_b$', r'$\Omega_{\rm cdm}$', r'$H_0$', r'$A_s$', r'$n_s$', r'$\tau_{\rm reio}$', r'$c_M$'}
+info.to_plot = {r'$10^{-2} \Omega_b$', r'$\Omega_{\rm cdm}$', r'$H_0$', r'$10^{-9} A_s$', r'$n_s$', r'$\tau_{\rm reio}$', r'$c_M$'}
 # Change colour scheme to be blue
 info.cmaps = [plt.cm.Blues]*7
 info.cm = ['steelblue']*7

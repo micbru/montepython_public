@@ -1,7 +1,7 @@
 #!/bin/bash -l
-#SBATCH -p debug
+#SBATCH -p regular #debug
 #SBATCH -N 1
-#SBATCH -t 00:30:00
+#SBATCH -t 02:00:00
 #SBATCH -J jobtest
 #SBATCH -o sl_noslip_lite_restart_%j
 #SBATCH -L SCRATCH  #note: specify license need for the file systems your job needs, such as SCRATCH,project (SCRATCH equivalent to scratch2)
@@ -13,7 +13,12 @@ source /scratch1/scratchdirs/micbru/NoSlip/planck/plc-2.0/bin/clik_profile.sh
 
 export OMP_NUM_THREADS=4
 
-for ((i=1; i < 7; i++ )); do
-    python montepython/Montepython.py run -r -N 4 chains/noslip_lite/2018-10-12_100000__$i.txt &
-done
-wait
+#for ((i=1; i < 7; i++ )); do
+#    echo "Loop Number: "$i
+#    python montepython/MontePython.py run -N 4 -r chains/noslip_lite/2018-10-12_100000__${i}.txt &
+#done
+#wait
+# Try this using MPI directly
+srun -N 1 -n 6 -c 4 python montepython/MontePython.py run -N 10000 -r chains/noslip_lite/2018-10-12_100000__1.txt
+
+exit

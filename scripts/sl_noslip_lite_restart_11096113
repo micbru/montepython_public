@@ -1,0 +1,59 @@
+ Initializing Planck likelihood, version Plik_v18_cmbonly_like
+ Initializing Planck likelihood, version Plik_v18_cmbonly_like
+ Initializing Planck likelihood, version Plik_v18_cmbonly_like
+ Initializing Planck likelihood, version Plik_v18_cmbonly_like
+ Initializing Planck likelihood, version Plik_v18_cmbonly_like
+ Initializing Planck likelihood, version Plik_v18_cmbonly_like
+ BFLike Ntemp  =        2876
+ BFLike Nq     =        1407
+ BFLike Nu     =        1407
+ BFLike Nside  =          16
+ BFLike Nwrite =    32393560
+ BFLike Ntemp  =        2876
+ BFLike Nq     =        1407
+ BFLike Nu     =        1407
+ BFLike Nside  =          16
+ BFLike Nwrite =    32393560
+ BFLike Ntemp  =        2876
+ BFLike Nq     =        1407
+ BFLike Nu     =        1407
+ BFLike Nside  =          16
+ BFLike Nwrite =    32393560
+ BFLike Ntemp  =        2876
+ BFLike Nq     =        1407
+ BFLike Nu     =        1407
+ BFLike Nside  =          16
+ BFLike Nwrite =    32393560
+ BFLike Ntemp  =        2876
+ BFLike Nq     =        1407
+ BFLike Nu     =        1407
+ BFLike Nside  =          16
+ BFLike Nwrite =    32393560
+ BFLike Ntemp  =        2876
+ BFLike Nq     =        1407
+ BFLike Nu     =        1407
+ BFLike Nside  =          16
+ BFLike Nwrite =    32393560
+ cls file appears to have 5+ columns
+ assuming it is a CAMB file with l, TT, EE, BB, TE
+ cls file appears to have 5+ columns
+ assuming it is a CAMB file with l, TT, EE, BB, TE
+ cls file appears to have 5+ columns
+ assuming it is a CAMB file with l, TT, EE, BB, TE
+ cls file appears to have 5+ columns
+ assuming it is a CAMB file with l, TT, EE, BB, TE
+ cls file appears to have 5+ columns
+ assuming it is a CAMB file with l, TT, EE, BB, TE
+ cls file appears to have 5+ columns
+ assuming it is a CAMB file with l, TT, EE, BB, TE
+ info =            0
+ info =            0
+ info =            0
+ info =            0
+ info =            0
+ info =            0
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** STEP 11096113.0 ON nid03493 CANCELLED AT 2018-10-17T13:53:01 DUE TO TIME LIMIT ***
+slurmstepd: error: *** JOB 11096113 ON nid03493 CANCELLED AT 2018-10-17T13:53:01 DUE TO TIME LIMIT ***
+srun: got SIGCONT
+srun: forcing job termination

@@ -1,0 +1,10 @@
+# This is a version with fewer parameters than the normal noslip.extra
+import matplotlib.pyplot as plt
+# Change them to python accordingly
+info.to_change = {'Omega_m': r'$\Omega_M$', 'H0':r'$H_0$','sigma8':r'$\sigma_8$','parameters_smg__2':r'$c_M$','A_lens':r'$A_{\rm lens}$'}
+# Only plot the 7 main parameters:
+info.to_plot = {r'$\Omega_M$', r'$H_0$', r'$\sigma_8$', r'$c_M$',r'$A_{\rm lens}$'}
+# Change colour scheme to be blue
+info.cmaps = [plt.cm.Blues]*7
+info.cm = ['steelblue']*7
+

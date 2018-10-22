@@ -1,7 +1,7 @@
 #!/bin/bash -l
 #SBATCH -p regular #debug
 #SBATCH -N 1
-#SBATCH -t 02:00:00
+#SBATCH -t 20:00:00
 #SBATCH -J jobtest
 #SBATCH -o sl_noslip_lite_restart_%j
 #SBATCH -L SCRATCH  #note: specify license need for the file systems your job needs, such as SCRATCH,project (SCRATCH equivalent to scratch2)
@@ -19,6 +19,6 @@ export OMP_NUM_THREADS=4
 #done
 #wait
 # Try this using MPI directly
-srun -N 1 -n 6 -c 4 python montepython/MontePython.py run -N 10000 -r chains/noslip_lite/2018-10-12_100000__1.txt
+srun -N 1 -n 6 -c 4 python montepython/MontePython.py run -N 10000 -r chains/noslip_lite/2018-10-17_110000__1.txt
 
 exit

@@ -1,0 +1,22 @@
+2018-10-18_500__3.txt	  Number of steps:46	 Steps accepted:15	 acc = 0.33	min(-loglike) = 5363.03
+2018-10-18_300__5.txt	  Number of steps:47	 Steps accepted:15	 acc = 0.32	min(-loglike) = 5362.49
+2018-10-21_100000__1.txt	  Number of steps:5012	 Steps accepted:1220	 acc = 0.24	min(-loglike) = 5353.03
+2018-10-18_300__2.txt	  Number of steps:61	 Steps accepted:20	 acc = 0.33	min(-loglike) = 5361.37
+2018-10-18_300__4.txt	  Number of steps:56	 Steps accepted:20	 acc = 0.36	min(-loglike) = 5356.91
+2018-10-21_100000__2.txt	  Number of steps:5067	 Steps accepted:1225	 acc = 0.24	min(-loglike) = 5353.32
+2018-10-18_500__1.txt	  Number of steps:18	 Steps accepted:5	 acc = 0.28	min(-loglike) = 5357.54
+2018-10-18_300__1.txt	  Number of steps:47	 Steps accepted:15	 acc = 0.32	min(-loglike) = 5357.07
+2018-10-18_500__4.txt	  Number of steps:49	 Steps accepted:15	 acc = 0.31	min(-loglike) = 5357.13
+2018-10-18_500__6.txt	  Number of steps:32	 Steps accepted:10	 acc = 0.31	min(-loglike) = 5356.55
+2018-10-18_500__2.txt	  Number of steps:20	 Steps accepted:5	 acc = 0.25	min(-loglike) = 5355.43
+2018-10-18_300__3.txt	  Number of steps:59	 Steps accepted:15	 acc = 0.25	min(-loglike) = 5360.37
+2018-10-21_100000__6.txt	  Number of steps:5217	 Steps accepted:1230	 acc = 0.24	min(-loglike) = 5352.92
+2018-10-21_100000__4.txt	  Number of steps:5116	 Steps accepted:1270	 acc = 0.25	min(-loglike) = 5352.63
+2018-10-18_300__6.txt	  Number of steps:50	 Steps accepted:20	 acc = 0.4	min(-loglike) = 5362.33
+2018-10-18_4__1.txt	  Number of steps:4	 Steps accepted:3	 acc = 0.75	min(-loglike) = 5359.32
+2018-10-18_500__5.txt	  Number of steps:33	 Steps accepted:5	 acc = 0.15	min(-loglike) = 5358.05
+2018-10-21_100000__3.txt	  Number of steps:5040	 Steps accepted:1305	 acc = 0.26	min(-loglike) = 5353.01
+2018-10-21_100000__5.txt	  Number of steps:5049	 Steps accepted:1175	 acc = 0.23	min(-loglike) = 5353.02
+--> Total    number    of    steps: 31023
+--> Total number of accepted steps: 7588
+--> Minimum of -logLike           : 5352.63

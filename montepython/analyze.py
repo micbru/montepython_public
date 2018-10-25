@@ -864,7 +864,7 @@ def compute_posterior(information_instances):
                                     extent=info.extent,
                                     levels=ctr_level(
                                         interp_smoothed_likelihood,
-                                        info.levels[:3]),
+                                        info.levels[:2]),
                                     zorder=4,
                                     colors = info.MP_color_cycle[info.id],
                                     alpha=info.alphas[info.id])

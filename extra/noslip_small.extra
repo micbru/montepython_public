@@ -1,13 +1,15 @@
 # This is a version with fewer parameters than the normal noslip.extra
-import matplotlib.pyplot as plt
 # Change them to python accordingly
+#info.redefine = {'$\Omega_M$':'(omega_cdm+omega_b)/(H0/100)**2'}
 info.to_change = {'omega_cdm':r'$\Omega_{\rm cdm}h^2$', 'H0':r'$H_0$','sigma8':r'$\sigma_8$','parameters_smg__2':r'$c_M$'}
-info.to_plot = [r'$\Omega_{\rm cdm}h^2$', r'$H_0$', r'$\sigma_8$', r'$c_M$']
+info.force_limits = {r'$c_M$':[0.0,0.03],r'$\Omega_{\rm cdm}h^2$':[0.11,0.13],r'$H_0$':[64,71],r'$\sigma_8$':[0.77,0.86]}
+info.to_plot = [r'$\sigma_8$',r'$H_0$',r'$c_M$',r'$\Omega_{\rm cdm}h^2$']
 # Change colour scheme to be blue
 info.MP_color = {'Blue':['lightsteelblue','steelblue']}
 info.MP_color_cycle = [info.MP_color['Blue']]
-info.decimal = 3
-info.bins = 20
-info.gaussian_smoothing = 2
-info.force_limits = {r'$A_{\rm lens}$':[0.9,1.4],r'$c_M$':[0.0,0.03]}
-
+info.decimal = 2
+info.bins = 15 
+#info.gaussian_smoothing = 1.1
+# Plot details
+info.ticksize = 18
+info.fontsize = 24
